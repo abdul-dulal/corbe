@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono, Unbounded } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
 
 export const unbounded = Unbounded({
   weight: ["300", "400", "500", "600", "700"],
@@ -18,10 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={unbounded.className}>
-        <div>
-          <Navbar />
-          {children}
-        </div>
+        <div>{children}</div>
       </body>
     </html>
   );

@@ -13,7 +13,8 @@ module.exports = {
       colors: {
         primary: "#D7FF52",
         secondary: "#0A0C00",
-        accent: "#083C2F",
+        accent: "#E9ECEA",
+        light: "#6F716C",
       },
       screens: {
         sm: "640px",
