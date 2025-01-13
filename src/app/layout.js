@@ -1,12 +1,4 @@
-import { Geist, Geist_Mono, Unbounded } from "next/font/google";
 import "./globals.css";
-
-export const unbounded = Unbounded({
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={unbounded.className}>
+      <body>
         <div>{children}</div>
       </body>
     </html>

@@ -25,7 +25,7 @@ import ReviewSliderContent from "@/src/components/ui/ReviewSliderContent";
 import Slider from "@/src/components/ui/Slider";
 import SliderContent from "@/src/components/ui/SliderContent";
 
-const Home = () => {
+const HomeOne = () => {
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [reviewIndex, setReveiwIndex] = useState(0);
@@ -46,7 +46,7 @@ const Home = () => {
             clickable: true,
             renderBullet: (index, className) => {
               const formattedIndex = (index + 1).toString().padStart(2, "0");
-              return `<span className="${className}">${formattedIndex}</span>`;
+              return `<span class="${className}">${formattedIndex}</span>`;
             },
           }}
         >
@@ -682,29 +682,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Corbo_Footer_Start */}
-
-      <section className="py-[120px]">
-        <div className="container">
-          <div className="flex items-center justify-between">
-            <div>
-              <h2 className="mb-5">
-                Start your Journey <br />
-                With Us
-              </h2>
-              <p className="text-light">
-                Elevate Your Brand with Inspired Design Financial planners help{" "}
-              </p>
-            </div>
-            <button className="w-[183px] h-[182px] bg-secondary rounded-full text-[17px] font-medium leading-4 text-white">
-              Let’s Talk
-            </button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
 
-export default Home;
+export default HomeOne;
