@@ -11,9 +11,9 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
-import logo from "@/public/img/corbo_logo.png";
+import logo from "@/public/img/corbe_logo.png";
 
-const Drawer = () => {
+const Drawer = ({ iconColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [home, setHome] = useState(true);
 
@@ -27,9 +27,9 @@ const Drawer = () => {
         className="relative z-[99] w-[30px] h-[20px] flex  flex-col justify-between overflow-hidden"
         onClick={toggleDrawer}
       >
-        <span className="w-[80px] h-[2px] bg-white"></span>
-        <span className="w-[80px] h-[2px] bg-white"></span>
-        <span className="w-[80px] h-[2px] bg-white"></span>
+        <span className={`w-[80px] h-[2px] bg-${iconColor}`}></span>
+        <span className={`w-[80px] h-[2px] bg-${iconColor}`}></span>
+        <span className={`w-[80px] h-[2px] bg-${iconColor}`}></span>
       </button>
 
       {/* Drawer */}
@@ -42,7 +42,12 @@ const Drawer = () => {
         <div className="h-full flex flex-col">
           <div className="px-[35px] pt-10 pb-2 flex-shrink-0">
             <div className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5 mb-[35px]">
-              <Image src={logo} className="w-[160px]" alt="Logo" />
+              <Image
+                src={logo}
+                priority={true}
+                className="w-[160px]"
+                alt="Logo"
+              />
               <button className="text-3xl" onClick={toggleDrawer}>
                 <FontAwesomeIcon icon={faXmark} />
               </button>
@@ -163,7 +168,7 @@ const Drawer = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clip-path="url(#clip0_17_262)">
+                      <g clipPath="url(#clip0_17_262)">
                         <path
                           d="M15.7508 0.960938H18.8175L12.1175 8.61927L20 19.0384H13.8283L8.995 12.7184L3.46333 19.0384H0.395L7.56167 10.8468L0 0.961771H6.32833L10.6975 6.73844L15.7508 0.960938ZM14.675 17.2034H16.3742L5.405 2.7001H3.58167L14.675 17.2034Z"
                           fill="white"
@@ -214,8 +219,8 @@ const Drawer = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
+                        fillrule="evenodd"
+                        cliprulee="evenodd"
                         d="M10.4833 0C4.68502 0 0.0202637 4.56926 0.0202637 10.2488C0.0202637 14.7754 3.02838 18.6187 7.16999 19.9852C7.69314 20.0706 7.86752 19.7717 7.86752 19.4727C7.86752 19.2165 7.86752 18.576 7.86752 17.7219C4.9466 18.3625 4.33625 16.3554 4.33625 16.3554C3.8567 15.1597 3.15917 14.8608 3.15917 14.8608C2.20006 14.2202 3.24636 14.2202 3.24636 14.2202C4.29266 14.3056 4.85941 15.2878 4.85941 15.2878C5.77492 16.8678 7.30077 16.3981 7.91112 16.1419C7.99831 15.4586 8.25988 15.0316 8.56505 14.7754C6.25447 14.5192 3.8131 13.6224 3.8131 9.69367C3.8131 8.58338 4.20547 7.64391 4.903 6.96065C4.81581 6.70443 4.42345 5.67955 4.99019 4.22764C4.99019 4.22764 5.86211 3.97142 7.86752 5.29522C8.69584 5.0817 9.61135 4.95359 10.4833 4.95359C11.3552 4.95359 12.2707 5.0817 13.099 5.29522C15.1044 3.97142 15.9763 4.22764 15.9763 4.22764C16.5431 5.63685 16.1943 6.66173 16.0635 6.96065C16.7175 7.68661 17.1534 8.58338 17.1534 9.69367C17.1534 13.6224 14.7121 14.4764 12.3579 14.7327C12.7503 15.0316 13.0554 15.6721 13.0554 16.6116C13.0554 17.9781 13.0554 19.0884 13.0554 19.43C13.0554 19.6863 13.2298 20.0279 13.7966 19.9425C17.9382 18.6187 20.9463 14.7754 20.9463 10.2488C20.9463 4.56926 16.2815 0 10.4833 0Z"
                         fill="white"
                       />

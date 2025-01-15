@@ -5,7 +5,7 @@ import React from "react";
 const BlogContent = ({ blogImg, blogTitle }) => {
   return (
     <div className="group">
-      <div className="duration-500 group-hover:-translate-y-5">
+      <div className="duration-700 group-hover:-translate-y-5">
         <Image src={blogImg} className="mb-[27px] w-full" alt="Blog" />
         <p className="flex items-center gap-2">
           <svg
@@ -22,7 +22,7 @@ const BlogContent = ({ blogImg, blogTitle }) => {
           </svg>
           January 19, 2025
         </p>
-        <h4 className="lg:text-2xl sm:text-xl text-lg capitalize leading-[30px] font-bold mt-[10px]">
+        <h4 className=" mt-[10px]">
           <Link href="">{blogTitle}</Link>
         </h4>
         <button className=" relative z-[9] mt-10 py-[22px] px-[30px] bg-transparent  text-secondary group-hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-secondary after:-z-[1]  group-hover:after:right-[50%] group-hover:after:left-0 group-hover:after:w-[100%] ">

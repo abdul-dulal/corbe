@@ -13,7 +13,7 @@ const VideoModal = () => {
     <div>
       <button
         onClick={togglePopup}
-        className="absolute top-[38%] left-[40%] flex items-center justify-center w-[100px] h-[100px] bg-primary rounded-full corbo_review"
+        className="absolute top-[38%] left-[40%] flex items-center justify-center w-[100px] h-[100px] bg-primary rounded-full Corbe_review"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

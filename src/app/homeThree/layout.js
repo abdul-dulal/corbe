@@ -1,4 +1,5 @@
 import FooterTwo from "@/src/components/footer/FooterTwo";
+import NavbarThree from "@/src/components/header/NavbarThree";
 import NavbarTwo from "@/src/components/header/NavbarTwo";
 import { Unbounded } from "next/font/google";
 
@@ -14,9 +15,9 @@ export default function HomeOneLayout({ children }) {
     <html lang="en">
       <body className={unbounded.className}>
         <div>
-          <NavbarTwo />
+          <NavbarThree />
           {children}
-          <FooterTwo />
+          {/* <FooterTwo /> */}
         </div>
       </body>
     </html>

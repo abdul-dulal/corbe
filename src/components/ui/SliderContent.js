@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import line from "@/public/img/HomeOne/Line.png";
 
 const SliderContent = ({ bgImg, title, activeIndex, index }) => {
   return (
@@ -41,7 +40,7 @@ const SliderContent = ({ bgImg, title, activeIndex, index }) => {
               view profile
             </Link>
           </button>
-          <div className="flex justify-end absolute sm:-bottom-[140px] -bottom-[170px] right-0 corbo_counter">
+          <div className="flex justify-end absolute sm:-bottom-[140px] -bottom-[170px] right-0 Corbe_counter">
             <div className="inline-block py-10 px-[30px] backdrop-blur-lg bg-[#FFFFFF1A] rounded-[20px] text-white">
               <h5 className="lg:text-[56px] md:text-[43px] sm:text-[38px] text-[30px] font-normal lg:leading-[74px] md:leading-[65px]  leading-[50px]">
                 $4.5M+

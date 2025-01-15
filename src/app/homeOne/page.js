@@ -24,6 +24,9 @@ import BlogContent from "@/src/components/ui/BlogContent";
 import ReviewSliderContent from "@/src/components/ui/ReviewSliderContent";
 import Slider from "@/src/components/ui/Slider";
 import SliderContent from "@/src/components/ui/SliderContent";
+import Review from "@/src/components/ui/Review";
+import ButtonMore from "@/src/components/ui/ButtonMore";
+import ServiceButton from "@/src/components/ui/ServiceButton";
 
 const HomeOne = () => {
   const swiperRef = useRef(null);
@@ -77,7 +80,7 @@ const HomeOne = () => {
         </Swiper>
       </div>
 
-      {/* Corbo_Feature_Start */}
+      {/* Corbe_Feature_Start */}
       <div className="bg-primary py-20 -mt-2">
         <div className="container">
           <div className="flex flex-wrap items-center lg:justify-center justify-between lg:gap-[177px] md:gap-[70px] sm:gap-10 gap-4">
@@ -144,35 +147,25 @@ const HomeOne = () => {
         </div>
       </div>
 
-      {/* Corbo_About_Start */}
+      {/* Corbe_About_Start */}
       <section className="relative pt-[120px] bg-accent">
         <div className="container">
           <h2 className="text-center mb-[60px]">
             Driven by Creativity <br /> and Passion
           </h2>
           <div className="flex flex-wrap gap-5 items-center justify-center pb-[60px]">
-            <button className="relative px-[30px] py-4 z-[9] bg-transparent border border-solid border-light rounded-[99px] text-[17px] leading-[15px] font-medium text-light hover:text-white duration-500 after:absolute after:content-[''] after:right-0 after:top-0 after:h-full  after:w-0 after:bg-transparent after:-z-[1] after:ease-out after:duration-500 after:hover:w-full after:hover:left-0 after:hover:bg-secondary after:hover:rounded-[99px]  ">
-              Graphic Design
-            </button>
-            <button className="relative px-[30px] py-4 z-[9] bg-transparent border border-solid border-light rounded-[99px] text-[17px] leading-[15px] font-medium text-light hover:text-white duration-500 after:absolute after:content-[''] after:right-0 after:top-0 after:h-full  after:w-0 after:bg-transparent after:-z-[1] after:ease-out after:duration-500 after:hover:w-full after:hover:left-0 after:hover:bg-secondary after:hover:rounded-[99px] ">
-              UX/UI
-            </button>
-            <button className="relative px-[30px] py-4 z-[9] bg-transparent border border-solid border-light rounded-[99px] text-[17px] leading-[15px] font-medium text-light hover:text-white duration-500 after:absolute after:content-[''] after:right-0 after:top-0 after:h-full  after:w-0 after:bg-transparent after:-z-[1] after:ease-out after:duration-500 after:hover:w-full after:hover:left-0 after:hover:bg-secondary after:hover:rounded-[99px] ">
-              Web Development
-            </button>
-            <button className="relative px-[30px] py-4 z-[9] bg-transparent border border-solid border-light rounded-[99px] text-[17px] leading-[15px] font-medium text-light hover:text-white duration-500 after:absolute after:content-[''] after:right-0 after:top-0 after:h-full  after:w-0 after:bg-transparent after:-z-[1] after:ease-out after:duration-500 after:hover:w-full after:hover:left-0 after:hover:bg-secondary after:hover:rounded-[99px] ">
-              Logo Design
-            </button>
-            <button className="relative px-[30px] py-4 z-[9] bg-transparent border border-solid border-light rounded-[99px] text-[17px] leading-[15px] font-medium text-light hover:text-white duration-500 after:absolute after:content-[''] after:right-0 after:top-0 after:h-full  after:w-0 after:bg-transparent after:-z-[1] after:ease-out after:duration-500 after:hover:w-full after:hover:left-0 after:hover:bg-secondary after:hover:rounded-[99px] ">
-              Brand Identity
-            </button>
+            <ServiceButton buttonTitle=" Graphic Design" />
+            <ServiceButton buttonTitle="UX/UI" />
+            <ServiceButton buttonTitle=" Web Development" />
+            <ServiceButton buttonTitle="Logo Design" />
+            <ServiceButton buttonTitle="Brand Identity" />
           </div>
           <div className="grid lg:grid-cols-2 xl:gap-[60px] gap-12 items-center sm:p-10 p-4 border border-solid border-light">
             <div>
               <Image src={about} className="w-full" alt="About" />
             </div>
             <div>
-              <h3 className="sm:lg:text-[28px] sm:text-2xl text-xl text-xl text-sesm:condary sm:lea leading-7ding-[30px] leading-[40px] font-bold mb-[30px]">
+              <h3 className="sm:lg:text-[28px] sm:text-2xl  text-xl text-sesm:condary sm:lea leading-7ding-[30px] leading-[40px] font-bold mb-[30px]">
                 Creativity that tells your story
               </h3>
               <p className="text-light mb-10">
@@ -190,30 +183,7 @@ const HomeOne = () => {
                   Folder structure to stay organized
                 </li>
               </ul>
-              <button className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-transparent  text-secondary hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:right-[50%] after:hover:left-0 after:hover:w-[100%] ">
-                <Link
-                  href="/"
-                  className="inline-block text-[17px] font-medium leading-[15px] capitalize"
-                >
-                  Learn More
-                  <span className="inline-block pl-[10px] ">
-                    <svg
-                      width="15"
-                      height="13"
-                      viewBox="0 0 15 13"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="group-hover:fill-white"
-                    >
-                      <path
-                        d="M13.6875 7.71875L8.6875 12.7188C8.5 12.9062 8.25 13 8 13C7.71875 13 7.46875 12.9062 7.28125 12.7188C6.875 12.3438 6.875 11.6875 7.28125 11.3125L10.5625 8H1C0.4375 8 0 7.5625 0 7C0 6.46875 0.4375 6 1 6H10.5625L7.28125 2.71875C6.875 2.34375 6.875 1.6875 7.28125 1.3125C7.65625 0.90625 8.3125 0.90625 8.6875 1.3125L13.6875 6.3125C14.0938 6.6875 14.0938 7.34375 13.6875 7.71875Z"
-                        fill="#0A0C00"
-                        className="fill-current"
-                      />
-                    </svg>
-                  </span>
-                </Link>
-              </button>
+              <ButtonMore buttonTitle=" Learn More" />
             </div>
           </div>
           <div className="pt-[120px]">
@@ -225,33 +195,21 @@ const HomeOne = () => {
         </div>
       </section>
 
-      {/* Corbo_Review_Start */}
-      <section className="pt-20 pb-[83px]">
+      {/* Corbe_Review_Start */}
+      <div className="pt-20 pb-[83px]">
         <div className="container">
           <div className="flex flex-wrap gap-10 justify-between">
-            <div>
-              <h2 className=" -tracking-[2] sm:mb-5 mb-1">$4.5M+</h2>
-              <span className="lg:text-xl md:text-lg text-base text-secondary leading-[26px] font-bold">
-                Monthly Revenue
-              </span>
-            </div>
-            <div>
-              <h2 className=" -tracking-[2] sm:mb-5 mb-1">$1.5k+</h2>
-              <span className="lg:text-xl md:text-lg text-base  text-secondary leading-[26px] font-bold">
-                Project Delivered
-              </span>
-            </div>
-            <div>
-              <h2 className=" -tracking-[2] sm:mb-5 mb-1">$1000+</h2>
-              <span className="lg:text-xl md:text-lg text-base text-secondary leading-[26px] font-bold">
-                Total User in the World
-              </span>
-            </div>
+            <Review reviewNumber="$4.5M+" reviewTitle="Monthly Revenue" />
+            <Review reviewNumber="$1.5k+" reviewTitle=" Project Delivered" />
+            <Review
+              reviewNumber="$1000+"
+              reviewTitle="  Total User in the World"
+            />
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Corbo_Service_Start */}
+      {/* Corbe_Service_Start */}
 
       <section className="bg-primary py-[120px] relative overflow-hidden">
         <div className="container">
@@ -582,7 +540,7 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
-      {/* Corbo_Review_Start */}
+      {/* Corbe_Review_Start */}
 
       <section className=" pt-[120px] bg-accent">
         <div className="container">
@@ -659,7 +617,7 @@ const HomeOne = () => {
           </Swiper>
         </div>
       </section>
-      {/* Corbo_Blog_Start */}
+      {/* Corbe_Blog_Start */}
 
       <section className="pt-5 pb-[120px] bg-accent">
         <div className="container">
