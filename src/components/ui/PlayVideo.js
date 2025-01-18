@@ -1,6 +1,7 @@
+"use client";
 import React, { useState } from "react";
 
-const VideoModal = () => {
+const PlayVideo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const togglePopup = () => {
     setIsOpen(!isOpen);
@@ -13,17 +14,11 @@ const VideoModal = () => {
     <div>
       <button
         onClick={togglePopup}
-        className="absolute top-[38%] left-[40%] flex items-center justify-center w-[100px] h-[100px] bg-primary rounded-full Corbe_review"
+        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[182px] w-[120px] sm:h-[182px] h-[120px] rounded-full  bg-white text-center corbe_play"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="48"
-          height="48"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-        >
-          <path d="M8 5v14l11-7z" />
-        </svg>
+        <span className=" sm:text-[17px] text-[14px] leading-4 font-bold text-secondary">
+          Play Video
+        </span>
       </button>
       {isOpen && (
         <div
@@ -55,4 +50,4 @@ const VideoModal = () => {
   );
 };
 
-export default VideoModal;
+export default PlayVideo;

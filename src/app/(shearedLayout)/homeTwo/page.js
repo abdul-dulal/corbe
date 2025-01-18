@@ -27,6 +27,7 @@ import video from "@/public/img/HomeTwo/video.png";
 import Gellary from "@/src/components/ui/Gellary";
 import Testimonial from "@/src/components/ui/Testimonial";
 import GellaryButton from "@/src/components/ui/GellaryButton";
+import PlayVideo from "@/src/components/ui/PlayVideo";
 
 const HomeTwo = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -176,8 +177,8 @@ const HomeTwo = () => {
               d="M20.022 39.7579C14.8988 35.9448 11.5801 29.8426 11.5801 22.9653C11.5801 11.4118 20.9461 2.04578 32.4996 2.04578C44.0532 2.04578 53.4192 11.4118 53.4192 22.9653C53.4192 29.7421 50.1968 35.7663 45.2008 39.5892"
               stroke="#0A0C00"
               strokeWidth="3.33601"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               fillRule="evenodd"
@@ -185,8 +186,8 @@ const HomeTwo = () => {
               d="M32.5003 22.9653L62.3854 63.3102H2.61523L32.5003 22.9653Z"
               stroke="#0A0C00"
               strokeWidth="3.33601"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </g>
           <defs>
@@ -377,11 +378,7 @@ const HomeTwo = () => {
         <div className="container">
           <div className="relative">
             <Image src={video} alt="" />
-            <div className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[182px] w-[120px] sm:h-[182px] h-[120px] rounded-full  bg-white text-center">
-              <span className=" text-[17px] leading-4 font-bold text-secondary">
-                Play Video
-              </span>
-            </div>
+            <PlayVideo />
           </div>
         </div>
       </div>

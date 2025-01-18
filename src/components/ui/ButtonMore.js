@@ -4,7 +4,7 @@ import React from "react";
 const ButtonMore = ({ buttonTitle }) => {
   return (
     <div>
-      <button className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-transparent  text-secondary hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:right-[50%] after:hover:left-0 after:hover:w-[100%] ">
+      <button className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-transparent  text-secondary capitalize hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:right-[50%] after:hover:left-0 after:hover:w-[100%] ">
         <Link
           href="/"
           className="inline-block text-[17px] font-medium leading-[15px] capitalize"

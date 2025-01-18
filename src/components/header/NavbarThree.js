@@ -13,7 +13,7 @@ const NavbarThree = () => {
           <Image src={logo} alt="Logo" />
         </div>
         <NavList listColor="black" />
-        <button className=" relative py-[22px] px-[30px] bg-transparent  text-secondary hover:text-secondary duration-500 border border-solid border-secondary hover:border-primary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:right-[50%] after:hover:left-0 after:hover:w-[100%] lg:block hidden">
+        <button className=" relative py-[22px] px-[30px] bg-transparent  text-secondary hover:text-secondary duration-500 border border-solid border-secondary hover:border-primary after:absolute after:content-['']  after:w-full after:top-[50%] after:right-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:block hidden">
           <Link
             href="/"
             className="text-[17px] font-medium leading-[15px] capitalize"

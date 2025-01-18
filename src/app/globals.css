@@ -14,6 +14,9 @@
   h4 {
     @apply lg:text-2xl sm:text-xl text-lg  leading-[30px] font-bold;
   }
+  p {
+    @apply text-base leading-[26px] font-normal;
+  }
 }
 
 /* image animatin */
@@ -25,13 +28,13 @@
 @keyframes img-anim-left {
   0% {
     transform: translate(-5%);
-    clip-path: inset(0 100% 0 0);
+    clippath: inset(0 100% 0 0);
     opacity: 0;
   }
 
   100% {
     transform: translate(0);
-    clip-path: inset(0 0 0 0);
+    clippath: inset(0 0 0 0);
     opacity: 1;
   }
 }
@@ -121,14 +124,28 @@ li:hover .sub-menu {
 }
 
 .Corbe_review {
+  animation: wave linear 1000ms infinite;
+}
+.corbe_play {
   animation: wave2 linear 1000ms infinite;
 }
-@keyframes wave2 {
+@keyframes wave {
   0% {
     box-shadow: 0 0 0 0 #d7ff52;
   }
   70% {
     box-shadow: 0 0 0 20px rgba(181, 196, 199, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(226, 231, 232, 0);
+  }
+}
+@keyframes wave2 {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(155, 158, 158, 0);
   }
   100% {
     box-shadow: 0 0 0 0 rgba(226, 231, 232, 0);

@@ -1,6 +1,5 @@
-import FooterTwo from "@/src/components/footer/FooterTwo";
+import FooterThree from "@/src/components/footer/FooterThree";
 import NavbarThree from "@/src/components/header/NavbarThree";
-import NavbarTwo from "@/src/components/header/NavbarTwo";
 import { Unbounded } from "next/font/google";
 
 export const unbounded = Unbounded({
@@ -17,7 +16,7 @@ export default function HomeOneLayout({ children }) {
         <div>
           <NavbarThree />
           {children}
-          {/* <FooterTwo /> */}
+          <FooterThree />
         </div>
       </body>
     </html>
