@@ -4,7 +4,7 @@ import footerbg from "@/public/img/HomeTwo/footerbg-2.png";
 import FooterBootom from "./FooterBootom";
 const FooterTwo = () => {
   return (
-    <footer className="-mt-[200px]">
+    <footer className="-mt-[230px]">
       <div className="container">
         <div className="relative bg-primary mb-20">
           <div className="relative z-[99] flex flex-wrap items-center justify-between  mb-[100px] xl:pl-[130px] pl-10 pt-[130px] pb-[103px] xl:pr-[122px] pr-10">

@@ -1,8 +1,8 @@
 import React from "react";
-import ButtonMore from "./ButtonMore";
+
 import Link from "next/link";
 
-const Service = () => {
+const Service = ({ item }) => {
   const services = [
     {
       title: "Graphic Design",
@@ -117,15 +117,91 @@ const Service = () => {
         </svg>
       ),
     },
+    {
+      title: "Mobile Design",
+      svg: (
+        <svg
+          width="76"
+          height="76"
+          viewBox="0 0 76 76"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M54.625 16.625H64.125V26.125H54.625V16.625ZM54.625 30.875H64.125V40.375H54.625V30.875ZM40.375 16.625H49.875V26.125H40.375V16.625ZM40.375 30.875H49.875V40.375H40.375V30.875Z"
+            fill="white"
+            stroke="#0A0C00"
+            stroke-width="3"
+          />
+          <path
+            d="M34.4375 61.75C36.405 61.75 38 60.155 38 58.1875C38 56.22 36.405 54.625 34.4375 54.625C32.47 54.625 30.875 56.22 30.875 58.1875C30.875 60.155 32.47 61.75 34.4375 61.75Z"
+            fill="#0A0C00"
+          />
+          <path
+            d="M49.875 71.25H19C17.7406 71.2487 16.5332 70.7479 15.6426 69.8574C14.7521 68.9668 14.2513 67.7594 14.25 66.5V9.5C14.2513 8.24061 14.7521 7.03316 15.6426 6.14263C16.5332 5.25211 17.7406 4.75126 19 4.75H49.875V9.5H19V66.5H49.875V47.5H54.625V66.5C54.6237 67.7594 54.1229 68.9668 53.2324 69.8574C52.3418 70.7479 51.1344 71.2487 49.875 71.25Z"
+            fill="#0A0C00"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Web Design",
+      svg: (
+        <svg
+          width="65"
+          height="65"
+          viewBox="0 0 65 65"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M64.6707 0.969192C65.2001 1.79872 65.0816 2.88479 64.3857 3.58063L28.7925 39.1741C28.1413 39.8251 27.1417 39.9753 26.3281 39.5445L1.11605 26.1971C0.383919 25.8095 -0.0514783 25.0272 0.00488191 24.2008C0.0612421 23.3743 0.598795 22.6584 1.37677 22.3738L62.182 0.1279C63.1063 -0.210211 64.1412 0.139674 64.6707 0.969192ZM7.24275 24.6943L26.9217 35.1126L54.7037 7.33056L7.24275 24.6943Z"
+            fill="#0A0C00"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M64.0302 0.329441C64.8597 0.858884 65.2095 1.89385 64.8714 2.81801L42.6256 63.6232C42.341 64.4014 41.6251 64.9389 40.7986 64.9951C39.9722 65.0515 39.1899 64.6161 38.8023 63.8839L25.4547 38.672C25.0239 37.8582 25.1743 36.8588 25.8253 36.2076L61.4187 0.614342C62.1146 -0.0815047 63.2006 -0.199993 64.0302 0.329441ZM57.6689 10.2965L29.8868 38.0785L40.305 57.7573L57.6689 10.2965Z"
+            fill="#0A0C00"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: "Mobile UI",
+      svg: (
+        <svg
+          width="62"
+          height="62"
+          viewBox="0 0 62 62"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M51.4294 2H60.0008V10.5714H51.4294V2ZM51.4294 14.8571H60.0008V23.4286H51.4294V14.8571ZM38.5723 2H47.1437V10.5714H38.5723V2ZM38.5723 14.8571H47.1437V23.4286H38.5723V14.8571Z"
+            fill="white"
+            stroke="#0A0C00"
+            stroke-width="3"
+          />
+          <path
+            d="M55.7143 32.0002V44.8573H4.28571V10.5716H30V6.28589H4.28571C3.14907 6.28589 2.05898 6.73742 1.25526 7.54115C0.451529 8.34487 0 9.43496 0 10.5716V44.8573C0 45.994 0.451529 47.084 1.25526 47.8878C2.05898 48.6915 3.14907 49.143 4.28571 49.143H21.4286V57.7145H12.8571V62.0002H47.1429V57.7145H38.5714V49.143H55.7143C56.8509 49.143 57.941 48.6915 58.7447 47.8878C59.5485 47.084 60 45.994 60 44.8573V32.0002H55.7143ZM34.2857 57.7145H25.7143V49.143H34.2857V57.7145Z"
+            fill="#0A0C00"
+          />
+        </svg>
+      ),
+    },
   ];
+  const slicedServices = services.slice(0, item);
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-[30px]">
-      {services.map((service) => {
+      {slicedServices.map((service) => {
         return (
           <div className="group p-10 bg-white" key={service.title}>
             <span className="">{service.svg}</span>
             <h4 className="pt-[60px] pb-5">
-              <Link href="#">{service.title}</Link>
+              <Link href="/service-details">{service.title}</Link>
             </h4>
             <p className="text-light leading-[26px]">
               Elevate Your Brand with Inspired people to gain knowledge about to

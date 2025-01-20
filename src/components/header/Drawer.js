@@ -136,7 +136,7 @@ const Drawer = ({ iconColor }) => {
               </ul>
             </header>
             <div className="mt-10">
-              <span className="text-xl text-white font-bold">
+              <span className="md:text-xl text-base text-white font-bold">
                 Subscribe & Follow
               </span>
               <ul className="my-5 flex gap-3">

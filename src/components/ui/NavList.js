@@ -13,7 +13,7 @@ const NavList = ({ listColor }) => {
             <li className="relative  inline-block mr-10 transition-all duration-500  ">
               <Link
                 className="py-[9px]  m-0 text-white leading-[26px] capitalize  block  duration-500 hover:text-primary"
-                href="/"
+                href="/homeOne"
               >
                 home one
               </Link>
@@ -34,18 +34,15 @@ const NavList = ({ listColor }) => {
                 home three
               </Link>
             </li>
-            <li className="relative  inline-block mr-10 transition-all duration-500  ">
-              <Link
-                className="py-[9px]  m-0 text-white leading-[26px] capitalize  block duration-500 hover:text-primary "
-                href="/HomeFour"
-              >
-                home freight
-              </Link>
-            </li>
           </ul>
         </li>
         <li className="py-5">
-          <Link href="/" className="duration-500 hover:text-primary">
+          <Link href="/aboutUs" className="duration-500 hover:text-primary">
+            About Us
+          </Link>
+        </li>
+        <li className="py-5">
+          <Link href="/services" className="duration-500 hover:text-primary">
             Services
           </Link>
         </li>
@@ -55,7 +52,7 @@ const NavList = ({ listColor }) => {
           </Link>
         </li>
         <li className="py-5">
-          <Link href="/" className="duration-500 hover:text-primary">
+          <Link href="/blog" className="duration-500 hover:text-primary">
             Blog
           </Link>
         </li>

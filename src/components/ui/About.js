@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="relative">
       <div className="absolute 2xl:left-[17%] md:left-[5%] left-[3%] -top-16 sm:w-[100px] w-[90px] sm:h-[100px] h-[90px] bg-[#083C2F] "></div>
-      <div className="pt-[120px]  md:pl-[140px] sm:pl-10 pl-3 bg-primary 2xl:w-[75%] sm:w-[80%] w-[65%] 2xl:h-[740px] lg:h-[800px] sm:h-[740px] h-[600px] absolute right-0 -top-[280px] ">
+      <div className="pt-[120px]  md:pl-[140px] sm:pl-10 pl-3 pr-3 bg-primary 2xl:w-[75%] sm:w-[80%] w-[65%] xl:h-[740px] lg:h-[800px] sm:h-[740px] h-[500px] absolute right-0 lg:-top-[280px] sm:-top-[230px] -top-[200px]  ">
         <h2 className="xl:text-[60px] lg:text-[45px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize font-bold">
           Driven by Creativity <br className="xl:block hidden" /> and Passion
         </h2>
