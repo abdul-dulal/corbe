@@ -7,7 +7,7 @@ const FooterTwo = () => {
     <footer className="-mt-[230px]">
       <div className="container">
         <div className="relative bg-primary mb-20">
-          <div className="relative z-[99] flex flex-wrap items-center justify-between  mb-[100px] xl:pl-[130px] pl-10 pt-[130px] pb-[103px] xl:pr-[122px] pr-10">
+          <div className="relative z-[99] flex flex-wrap items-center justify-between  mb-[100px] xl:pl-[130px] sm:pl-10 pl-5 sm:pt-[130px] pt-20 sm:pb-[103px] pb-20 xl:pr-[122px] sm:pr-10 pr-5">
             <div>
               <h2 className="mb-5 inline">
                 Start Your Creative <br className="sm:block hidden" /> Journey

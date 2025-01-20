@@ -9,7 +9,7 @@
 }
 @layer base {
   h2 {
-    @apply lg:text-[60px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize font-bold;
+    @apply lg:text-[60px] lg:leading-[80px] sm:text-[36px] text-[22px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize font-bold;
   }
   h4 {
     @apply lg:text-2xl sm:text-xl text-lg  leading-[30px] font-bold;

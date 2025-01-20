@@ -46,18 +46,14 @@ const NavList = ({ listColor }) => {
             Services
           </Link>
         </li>
-        <li className="py-5">
-          <Link href="/" className="duration-500 hover:text-primary">
-            Projects
-          </Link>
-        </li>
+
         <li className="py-5">
           <Link href="/blog" className="duration-500 hover:text-primary">
             Blog
           </Link>
         </li>
         <li className="py-5">
-          <Link href="/" className="duration-500 hover:text-primary">
+          <Link href="/contact" className="duration-500 hover:text-primary">
             Contact
           </Link>
         </li>

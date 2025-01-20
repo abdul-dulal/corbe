@@ -42,8 +42,8 @@ const Blog = () => {
       <BreadCumb currentPage="Blog" />
       <section className="bg-accent pt-[120px] pb-[330px]">
         <div className="container">
-          <div className="grid grid-cols-12 md:gap-[30px]">
-            <div className="md:col-span-8 col-span-12">
+          <div className="grid grid-cols-12 lg:gap-[30px]">
+            <div className="lg:col-span-8 col-span-12">
               <div>
                 {blogs.map((blog) => {
                   return (
@@ -53,11 +53,12 @@ const Blog = () => {
                         width={850}
                         height={757}
                         alt={blog.title}
+                        className="w-full"
                       />
                       <p className="text-light my-4">January 19, 2025</p>
                       <Link
                         href="/blog-details"
-                        className="lg:text-[28px] md:text-[22px] text-[19px] leading-[30px] font-bold pb-5  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-secondary "
+                        className="inline-block lg:text-[28px] md:text-[22px] text-[19px] leading-[30px] font-bold pb-5  relative after:absolute after:content-[''] after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-secondary "
                       >
                         {blog.title}
                       </Link>
@@ -96,7 +97,7 @@ const Blog = () => {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-4 col-span-12 md:mt-0 mt-20">
+            <div className="lg:col-span-4 col-span-12 md:mt-0 mt-20">
               <div className="p-[30px] bg-white border border-solid border-[#083C2F] rounded-[15px]">
                 <h4 className="relative after:absolute after:content-[''] after:-bottom-[10px] after:left-0 after:w-[84px] after:h-[2px] after:bg-[#083C2F] mb-[30px]">
                   Search
