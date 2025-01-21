@@ -37,7 +37,7 @@ const FooterSocial = () => {
                 />
               </g>
               <defs>
-                <clipPath id="clip0_17_262">
+                <clipPath id="clip0_17_263">
                   <rect width="20" height="20" fill="#0A0C00" />
                 </clipPath>
               </defs>

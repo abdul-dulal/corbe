@@ -89,7 +89,7 @@ const ReviewSliderContent = ({ img, name, swiperRef }) => {
                       transform="translate(0 2.30762)"
                     />
                   </clipPath>
-                  <clipPath id="clip1_16_577">
+                  <clipPath id="clip1_16_578">
                     <rect
                       width="20"
                       height="20"
@@ -135,7 +135,7 @@ const ReviewSliderContent = ({ img, name, swiperRef }) => {
                       transform="translate(0 2.30762)"
                     />
                   </clipPath>
-                  <clipPath id="clip1_16_577">
+                  <clipPath id="clip1_16_579">
                     <rect
                       width="20"
                       height="20"
@@ -181,7 +181,7 @@ const ReviewSliderContent = ({ img, name, swiperRef }) => {
                       transform="translate(0 2.30762)"
                     />
                   </clipPath>
-                  <clipPath id="clip1_16_577">
+                  <clipPath id="clip1_16_572">
                     <rect
                       width="20"
                       height="20"
