@@ -19,6 +19,21 @@
   }
 }
 
+.is-sticky {
+  animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* image animatin */
 .img-custom-anim-left {
   animation: img-anim-left 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1)

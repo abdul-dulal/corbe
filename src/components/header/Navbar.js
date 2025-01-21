@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import logo from "@/public/img/corbe_logo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,14 +7,35 @@ import Drawer from "./Drawer";
 import NavList from "../ui/NavList";
 
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="relative z-[9999] mt-10">
-      <div className="container flex items-center justify-between bg-transparent z-[999] ">
+    <header
+      className={`z-[9999] py-[34px]  ${
+        isSticky
+          ? "fixed top-0 left-0 w-full bg-[#083C2F] py-4 is-sticky mt-0"
+          : "bg-transparent relative  "
+      }`}
+    >
+      <div className="container flex items-center justify-between  ">
         <div>
           <Image src={logo} priority={true} alt="Logo" />
         </div>
         <NavList listColor="white" />
-        <button className=" relative py-[22px] px-[30px]  text-white hover:text-secondary duration-500 border border-solid border-white after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:right-[50%] after:hover:left-0 after:hover:w-[100%] lg:block hidden">
+        <button className=" relative py-[22px] px-[30px]  text-white hover:text-secondary duration-500 border border-solid border-white after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:block hidden">
           <Link
             href="/"
             className="text-[17px] font-medium leading-[15px] capitalize"

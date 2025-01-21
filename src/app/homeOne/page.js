@@ -13,7 +13,7 @@ import about from "@/public/img/HomeOne/about.png";
 import path from "@/public/img/HomeOne/layer.png";
 import design from "@/public/img/HomeOne/graphic-desing.png";
 import shuffle1 from "@/public/img/HomeOne/shuffle1.png";
-import shuffle2 from "@/public/img/HomeOne/shuffle3.png";
+import shuffle2 from "@/public/img/HomeOne/shuffle2.png";
 import Image from "next/image";
 import c1 from "@/public/img/HomeOne/c1.png";
 import blog1 from "@/public/img/HomeOne/b1.png";
@@ -35,7 +35,7 @@ const HomeOne = () => {
 
   return (
     <div>
-      <div className=" -mt-[112px] -z-[99]">
+      <div className=" -mt-[140px] -z-[99]">
         <Swiper
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
           slidesPerView={1}
@@ -262,7 +262,7 @@ const HomeOne = () => {
                   <Image
                     src={design}
                     alt="Graphic Desing"
-                    className="absolute scale-0 top-5  duration-500 transition-all sm:w-[320px] w-[230px]   xl:right-0 object-cover  group-hover:scale-[1] group-hover:right-[30%] group-hover:rotate-40"
+                    className="absolute scale-0 top-5  duration-[.9s] transition-all sm:w-[320px] w-[230px]   xl:right-0 object-cover  group-hover:scale-[1] group-hover:right-[30%] group-hover:rotate-40"
                   />
                 </div>
               </Link>

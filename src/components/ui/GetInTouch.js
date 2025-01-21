@@ -4,7 +4,7 @@ import React from "react";
 
 const GetInTouch = ({ icon, title, address }) => {
   return (
-    <div className=" flex flex-wrap items-center gap-5 ">
+    <div className=" sm:flex block  items-center gap-5 ">
       <div>
         <div className=" w-[60px] h-[60px] bg-transparent border border-solid border-secondary rounded-[15px] text-center   text-[26px] leading-[60px] mt-6">
           <span className="text-[#083C2F]  ">

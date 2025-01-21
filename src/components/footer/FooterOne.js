@@ -7,13 +7,13 @@ const FooterOne = () => {
   return (
     <footer className="pt-[120px]">
       <div className="container">
-        <div className="flex items-center justify-between mb-[100px]">
+        <div className="flex flex-wrap items-center justify-between mb-[100px]">
           <div>
             <h2 className="mb-5">
               Start your Journey <br />
               With Us
             </h2>
-            <p className="text-light">
+            <p className="text-light mb-10">
               Elevate Your Brand with Inspired Design Financial planners help{" "}
             </p>
           </div>
@@ -21,11 +21,11 @@ const FooterOne = () => {
             Let’s Talk
           </button>
         </div>
-        <div className="flex justify-between items-center mb-[61px]">
+        <div className="flex flex-wrap gap-10 justify-between items-center mb-[61px]">
           <div>
             <Image src={logo} alt="Footer Logo" />
           </div>
-          <ul className="flex gap-[66px]">
+          <ul className="flex flex-wrap sm:gap-[66px] gap-4">
             <li>
               <Link href="">About</Link>
             </li>
