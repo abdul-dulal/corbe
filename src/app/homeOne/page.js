@@ -54,7 +54,7 @@ const HomeOne = () => {
       title: "Graphic Design",
       svg: (
         <svg
-          className=" sm:w-[80px] w-[50px] sm:h-[80px] h-[50px]"
+          className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
           viewBox="0 0 65 66"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -396,11 +396,16 @@ const HomeOne = () => {
                       <div className="flex flex-wrap gap-4  md:flex-row items-center justify-between group transition-all relative   pb-[30px]  duration-500 border-b border-solid border-secondary ">
                         <div className="group  flex items-center  gap-[30px]">
                           <span>{vision.svg}</span>
-                          <h6 className="  lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500">
+                          <div>
                             {vision.title.split(" ").map((word) => (
-                              <div key={word}>{word}</div>
+                              <h5
+                                className="lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500"
+                                key={word}
+                              >
+                                {word}
+                              </h5>
                             ))}
-                          </h6>
+                          </div>
                         </div>
                         <span className="sm:w-20 w-[70px] sm:h-20 h-[70px] border border-solid border-secondary rounded-full flex items-center justify-center duration-500 group-hover:-rotate-[45deg] group-hover:bg-secondary group">
                           <svg
