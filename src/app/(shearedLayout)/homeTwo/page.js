@@ -230,14 +230,14 @@ const HomeTwo = () => {
                   Planners help people to gain knowledge about to is invest and
                   save their money edge about to is invest and
                 </p>
-                <button className=" group relative z-20  block mb-[46px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:right-[50%] after:hover:left-0 after:hover:w-[100%]">
+                <div className="inline-block group relative z-20   mb-[46px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full">
                   <Link
                     href="/"
                     className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize"
                   >
                     view profile
                   </Link>
-                </button>
+                </div>
               </div>
               <Image
                 src={heroTwo}

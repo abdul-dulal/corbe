@@ -62,7 +62,7 @@ const Blog = () => {
                       >
                         {blog.title}
                       </Link>
-                      <p className="text-light mb-8 mt-10">
+                      <p className="text-light mb-10 mt-10">
                         Miquam eros justo, posuere loborti viverra lao
                         ullamcorper posuere viverra .Aliquam eros justo, posuere
                         lobortis in non, viverra laoreet augue mattis start
@@ -70,14 +70,14 @@ const Blog = () => {
                         . 29th Februarym 2022 . Leave a comment viverra laoreet
                         augue mattis start fermentum
                       </p>
-                      <button className=" group relative z-20  mb-[30px] py-[22px] px-8 border border-solid border-[#083C2F] bg-transparent  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full">
+                      <div className="mb-14 ">
                         <Link
                           href="/"
-                          className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize"
+                          className="text-[17px] text-secondary hover:text-white duration-500 font-medium leading-[15px] capitalize  relative z-20   py-[22px] px-8 border border-solid border-[#083C2F] bg-transparent  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full "
                         >
                           view profile
                         </Link>
-                      </button>
+                      </div>
                     </div>
                   );
                 })}

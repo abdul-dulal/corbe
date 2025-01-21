@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-[9999] py-[34px]  ${
+      className={`z-[9999] py-[30px]  ${
         isSticky
-          ? "fixed top-0 left-0 w-full bg-[#083C2F] py-4 is-sticky mt-0"
+          ? "fixed top-0 left-0 w-full bg-[#083C2F]  is-sticky mt-0"
           : "bg-transparent relative  "
       }`}
     >
@@ -35,14 +35,14 @@ const Navbar = () => {
           <Image src={logo} priority={true} alt="Logo" />
         </div>
         <NavList listColor="white" />
-        <button className=" relative py-[22px] px-[30px]  text-white hover:text-secondary duration-500 border border-solid border-white after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:block hidden">
+        <div className=" relative py-[22px] px-[30px]  text-white hover:text-secondary duration-500 border border-solid border-white after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:inline-block hidden">
           <Link
             href="/"
             className="text-[17px] font-medium leading-[15px] capitalize"
           >
             contact us
           </Link>
-        </button>
+        </div>
         <Drawer iconColor="white" />
       </div>
     </header>

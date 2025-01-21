@@ -25,7 +25,7 @@ const BlogContent = ({ blogImg, blogTitle }) => {
         <h4 className=" mt-[10px]">
           <Link href="">{blogTitle}</Link>
         </h4>
-        <button className=" relative z-[9] mt-10 py-[22px] px-[30px] bg-transparent  text-secondary group-hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-secondary after:-z-[1]  group-hover:after:right-[50%] group-hover:after:left-0 group-hover:after:w-[100%] ">
+        <div className=" relative z-[9] mt-10 py-[22px] px-[30px] bg-transparent  text-secondary group-hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-secondary after:-z-[1]  group-hover:after:right-[50%] group-hover:after:left-0 group-hover:after:w-[100%] ">
           <Link
             href="/"
             className="inline-block text-[17px] font-medium leading-[15px] capitalize"
@@ -48,7 +48,7 @@ const BlogContent = ({ blogImg, blogTitle }) => {
               </svg>
             </span>
           </Link>
-        </button>
+        </div>
       </div>
     </div>
   );

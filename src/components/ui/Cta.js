@@ -15,8 +15,8 @@ const Cta = () => {
               Elevate Your Brand with Inspired Design{" "}
             </p>
           </div>
-          <button className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-secondary   text-white capitalize hover:text-secondary duration-500  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full ">
-            <Link
+          <div className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-secondary   text-white capitalize hover:text-secondary duration-500  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full ">
+            <div
               href="/"
               className="inline-block text-[17px] font-medium leading-[15px] capitalize"
             >
@@ -37,8 +37,8 @@ const Cta = () => {
                   />
                 </svg>
               </span>
-            </Link>
-          </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
