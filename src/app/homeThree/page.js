@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import queen from "@/public/img/HomeThree/queen.png";
 import group from "@/public/img/HomeThree/group.png";
@@ -14,7 +15,8 @@ import g5 from "@/public/img/HomeThree/g5.png";
 import vision from "@/public/img/HomeThree/vision.png";
 import PlayVideo from "@/src/components/ui/PlayVideo";
 import Testimonial from "@/src/components/ui/Testimonial";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 import About from "@/src/components/ui/About";
 import Cta from "@/src/components/ui/Cta";
 import Trusted from "@/src/components/ui/Trusted";
@@ -41,6 +43,14 @@ const HomeThree = () => {
       title: "Web Design",
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
     <div>
@@ -49,7 +59,7 @@ const HomeThree = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-20 overflow-hidden">
             <div>
-              <h2 className="xl:text-[60px] lg:text-[45px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize lg:text-left text-center font-bold -tracking-[2] block">
+              <h2 className="xl:text-[60px] lg:text-[45px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize lg:text-left text-center font-bold -tracking-[2] block slider_parag">
                 Our Creativity
                 <span className="inline-block ml-3">
                   <Image src={queen} alt="Queen" />
@@ -57,7 +67,7 @@ const HomeThree = () => {
                 <br />
                 Meets Strategy
               </h2>
-              <p className="leading-[26px] text-light mt-5 mb-[30px] lg:text-left text-center">
+              <p className="leading-[26px] text-light mt-5 mb-[30px] lg:text-left text-center slider_parag">
                 Elevate Your Brand with Inspired Design Financial <br />
                 planners help people to gain knowledge about to is <br /> invest
                 and save their money Elevate
@@ -93,7 +103,7 @@ const HomeThree = () => {
                 <div key={service.id}>
                   <h2>
                     {service.title}
-                    <span className="inline-block relative top-5">
+                    <span className="inline-block relative top-5 ">
                       <svg
                         width="81"
                         height="81"
@@ -122,7 +132,10 @@ const HomeThree = () => {
       {/* Corbe_Service_Start */}
       <section className="py-[120px] bg-accent">
         <div className="container">
-          <div className="flex flex-wrap items-center justify-between pb-[60px]">
+          <div
+            className="flex flex-wrap items-center justify-between pb-[60px]"
+            data-aos="fade-up"
+          >
             <h2>
               Transformative <br /> Creative Services
             </h2>
@@ -163,7 +176,7 @@ const HomeThree = () => {
 
       {/* Corbe_Work_Gellary_Start */}
       <section className="bg-accent pb-[120px]">
-        <h2 className="text-center pb-[60px]">
+        <h2 className="text-center pb-[60px]" data-aos="fade-up">
           Our Work Speaks <br /> Volumes
         </h2>
         <div className="flex flex-col overflow-hidden pb-[30px]">
@@ -199,7 +212,7 @@ const HomeThree = () => {
       {/* Corbe_Vision_Start */}
       <section className="bg-primary lg:h-[770px] sm:h-[500px] h-[400px]">
         <div className="container">
-          <h2 className="text-center pt-[120px] pb-[60px]">
+          <h2 className="text-center pt-[120px] pb-[60px]" data-aos="fade-up">
             From Vision to <br /> Reality
           </h2>
           <div className="relative">
@@ -212,7 +225,10 @@ const HomeThree = () => {
       {/* Corbe_Testimonial_Start */}
       <section className=" bg-accent xl:pt-[350px] md:pt-[300px] sm:pt-[250px] pt-[160px] pb-[120px]  overflow-hidden">
         <div className="container  pb-[350px] relative">
-          <div className="flex flex-wrap items-center justify-between">
+          <div
+            className="flex flex-wrap items-center justify-between"
+            data-aos="fade-up"
+          >
             <h2 className="">
               Hear from Our <br /> Happy Clients
             </h2>
@@ -245,7 +261,7 @@ const HomeThree = () => {
       {/* Corbo_Team_Start */}
       <section className="pb-[100px] bg-accent pt-10">
         <div className="container">
-          <h2 className="text-center pb-32">
+          <h2 className="text-center pb-32" data-aos="fade-up">
             The Creative Minds <br /> Behind the Magic
           </h2>
           <Team />

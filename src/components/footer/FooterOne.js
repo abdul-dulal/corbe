@@ -9,15 +9,18 @@ const FooterOne = () => {
       <div className="container">
         <div className="flex flex-wrap items-center justify-between mb-[100px]">
           <div>
-            <h2 className="mb-5">
+            <h2 className="mb-5" data-aos="fade-up">
               Start your Journey <br />
               With Us
             </h2>
-            <p className="text-light mb-10">
+            <p className="text-light mb-10" data-aos="fade-up">
               Elevate Your Brand with Inspired Design Financial planners help{" "}
             </p>
           </div>
-          <button className="w-[183px] h-[182px] bg-secondary rounded-full text-[17px] font-medium leading-4 text-white">
+          <button
+            className="w-[183px] h-[182px] bg-secondary rounded-full text-[17px] font-medium leading-4 text-white corbe_talk"
+            data-aos="zoom-in"
+          >
             Let’s Talk
           </button>
         </div>

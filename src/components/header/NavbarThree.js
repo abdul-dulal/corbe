@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import logo from "@/public/img/logo-black.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,8 +7,28 @@ import Drawer from "./Drawer";
 import NavList from "../ui/NavList";
 
 const NavbarThree = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="relative z-[9999] mt-10 mb-[70px]">
+    <header
+      className={`z-[999] py-[30px] mb-[70px]  ${
+        isSticky
+          ? "fixed top-0 left-0 w-full bg-white shadow-lg backdrop-blur-lg  is-sticky mt-0"
+          : "bg-transparent relative  "
+      }`}
+    >
       <div className="container flex items-center justify-between bg-transparent z-[999] ">
         <div>
           <Image src={logo} alt="Logo" />

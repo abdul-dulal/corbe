@@ -1,5 +1,5 @@
 {
-  "name": "Corbe",
+  "name": "corbe",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,12 +14,12 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "next": "^15.2.0-canary.18",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.0",
-    "wow.js": "^1.2.2"
+    "react-scroll-trigger": "^0.6.14",
+    "swiper": "^11.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

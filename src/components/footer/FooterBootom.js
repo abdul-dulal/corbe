@@ -6,7 +6,7 @@ import footerLogo from "@/public/img/logo-black.png";
 const FooterBootom = () => {
   return (
     <div className="container">
-      <div className="grid lg:grid-cols-2 pb-14 border-b">
+      <div className="grid lg:grid-cols-2 pb-14 border-b" data-aos="fade-up">
         <div className="space-y-5">
           <Image src={footerLogo} alt="Logo" />
           <p className=" sm:w-[448px] leading-[26px]">

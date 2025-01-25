@@ -29,12 +29,14 @@ import ButtonMore from "@/src/components/ui/ButtonMore";
 import ServiceButton from "@/src/components/ui/ServiceButton";
 
 const HomeOne = () => {
+  const [visible, setVisible] = useState(false);
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const [reviewIndex, setReveiwIndex] = useState(0);
 
   const visions = [
     {
+      id: 1,
       title: "Seo Expert",
       svg: (
         <svg
@@ -49,8 +51,10 @@ const HomeOne = () => {
           />
         </svg>
       ),
+      img: design,
     },
     {
+      id: 2,
       title: "Graphic Design",
       svg: (
         <svg
@@ -77,8 +81,10 @@ const HomeOne = () => {
           </defs>
         </svg>
       ),
+      img: blog1,
     },
     {
+      id: 3,
       title: " Layout Design",
       svg: (
         <svg
@@ -117,8 +123,10 @@ const HomeOne = () => {
           </defs>
         </svg>
       ),
+      img: blog2,
     },
     {
+      id: 4,
       title: "   Mobile Design",
       svg: (
         <svg
@@ -145,8 +153,10 @@ const HomeOne = () => {
           </defs>
         </svg>
       ),
+      img: design,
     },
     {
+      id: 5,
       title: " Web Design",
       svg: (
         <svg
@@ -197,6 +207,7 @@ const HomeOne = () => {
           />
         </svg>
       ),
+      img: blog3,
     },
   ];
 
@@ -230,7 +241,7 @@ const HomeOne = () => {
           </SwiperSlide>
           <SwiperSlide>
             <SliderContent
-              bgImg="/img/HomeOne/featureSlider.png"
+              bgImg="/img/HomeOne/featureSlider2.png"
               title="Our Strategy"
               activeIndex={activeIndex}
               index={1}
@@ -249,8 +260,11 @@ const HomeOne = () => {
 
       {/* Corbe_Feature_Start */}
       <div className="bg-primary py-20 -mt-2">
-        <div className="container">
-          <div className="flex flex-wrap items-center lg:justify-center justify-between lg:gap-[177px] md:gap-[70px] sm:gap-10 gap-4">
+        <div className="container ">
+          <div
+            className="flex flex-wrap items-center lg:justify-center justify-between lg:gap-[177px] md:gap-[70px] sm:gap-10 gap-4"
+            data-aos="fade-up"
+          >
             <div className="flex items-center gap-[7px] relative after:absolute lg:after:-right-[88px] sm:after:-right-10 after:-right-4  after:top-0 sm:after:w-[1px] after:h-20 after:bg-light">
               <svg
                 className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -316,8 +330,8 @@ const HomeOne = () => {
 
       {/* Corbe_About_Start */}
       <section className="relative pt-[120px] bg-accent">
-        <div className="container">
-          <h2 className="text-center mb-[60px]">
+        <div className="container ">
+          <h2 className="text-center mb-[60px] " data-aos="fade-up">
             Driven by Creativity <br /> and Passion
           </h2>
           <div className="flex flex-wrap gap-5 items-center justify-center pb-[60px]">
@@ -327,11 +341,14 @@ const HomeOne = () => {
             <ServiceButton buttonTitle="Logo Design" />
             <ServiceButton buttonTitle="Brand Identity" />
           </div>
-          <div className="grid lg:grid-cols-2 xl:gap-[60px] gap-12 items-center sm:p-10 p-4 border border-solid border-light">
-            <div>
-              <Image src={about} className="w-full" alt="About" />
+          <div
+            className="grid lg:grid-cols-2 xl:gap-[60px] gap-12 items-center sm:p-10 p-4 border border-solid border-light"
+            data-aos="fade-up"
+          >
+            <div className="relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:bg-[rgba(255,255,255,.3)] after:opacity-100 after:z-[11] after:pointer-events-none after:hover:h-full after:hover:opacity-0 after:hover:transition-all after:hover:duration-[.4s] after:hover:ease-linear">
+              <Image src={about} className="w-full " alt="About" />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <h3 className="sm:lg:text-[28px] sm:text-2xl  text-xl text-sesm:condary sm:lea leading-7ding-[30px] leading-[40px] font-bold mb-[30px]">
                 Creativity that tells your story
               </h3>
@@ -354,7 +371,7 @@ const HomeOne = () => {
             </div>
           </div>
           <div className="pt-[120px]">
-            <h2 className="text-center pb-[60px]">
+            <h2 className="text-center pb-[60px]" data-aos="fade-up">
               The artistry of brand <br /> storytelling
             </h2>
             <Slider />
@@ -363,7 +380,7 @@ const HomeOne = () => {
       </section>
 
       {/* Corbe_Review_Start */}
-      <div className="pt-20 pb-[83px]">
+      <div className="pt-20 pb-[83px]" data-aos="fade-up">
         <div className="container">
           <div className="flex flex-wrap gap-10 justify-between">
             <Review reviewNumber="$4.5M+" reviewTitle="Monthly Revenue" />
@@ -384,54 +401,55 @@ const HomeOne = () => {
             <Image src={path} alt="Path" />
           </div>
           <div>
-            <h2 className="mb-[60px]">
+            <h2 className="mb-[60px]" data-aos="fade-up">
               Solutions for <br /> Every Vision
             </h2>
 
             {visions.map((vision) => {
               return (
-                <div key={vision.title}>
+                <div key={vision.id}>
                   <div className="mb-[50px]">
-                    <Link href="/">
-                      <div className="flex flex-wrap gap-4  md:flex-row items-center justify-between group transition-all relative   pb-[30px]  duration-500 border-b border-solid border-secondary ">
-                        <div className="group  flex items-center  gap-[30px]">
-                          <span>{vision.svg}</span>
-                          <div>
-                            {vision.title.split(" ").map((word) => (
-                              <h5
-                                className="lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500"
-                                key={word}
-                              >
-                                {word}
-                              </h5>
-                            ))}
-                          </div>
+                    <div className="flex flex-wrap gap-4  md:flex-row items-center justify-between group transition-all relative   pb-[30px]  duration-500 border-b border-solid border-secondary ">
+                      <div className="group  flex items-center  gap-[30px]">
+                        <span>{vision.svg}</span>
+                        <div>
+                          {vision.title.split(" ").map((word) => (
+                            <h5
+                              className="lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500"
+                              key={word}
+                            >
+                              {word}
+                            </h5>
+                          ))}
                         </div>
-                        <span className="sm:w-20 w-[70px] sm:h-20 h-[70px] border border-solid border-secondary rounded-full flex items-center justify-center duration-500 group-hover:-rotate-[45deg] group-hover:bg-secondary group">
-                          <svg
-                            className=" sm:w-[48px] w-[40px] sm:h-[49px] h-[40px]"
-                            viewBox="0 0 48 49"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M10 24.678H38M38 24.678L24 10.678M38 24.678L24 38.678"
-                              className="group-hover:stroke-white"
-                              stroke="#0A0C00"
-                              strokeWidth="4"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-
-                        <Image
-                          src={design}
-                          alt="Graphic Desing"
-                          className="absolute scale-0   duration-[.9s] transition-all sm:w-[320px] w-[230px]   right-0  object-cover  group-hover:right-[30%] group-hover:scale-[1] group-hover:rotate-40"
-                        />
                       </div>
-                    </Link>
+                      <Link
+                        href="#"
+                        className="sm:w-20 w-[70px] sm:h-20 h-[70px] border border-solid border-secondary rounded-full flex items-center justify-center duration-500 group-hover:-rotate-[45deg] group-hover:bg-secondary group"
+                      >
+                        <svg
+                          className=" sm:w-[48px] w-[40px] sm:h-[49px] h-[40px]"
+                          viewBox="0 0 48 49"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10 24.678H38M38 24.678L24 10.678M38 24.678L24 38.678"
+                            className="group-hover:stroke-white"
+                            stroke="#0A0C00"
+                            strokeWidth="4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </Link>
+
+                      <Image
+                        src={vision.img}
+                        alt={vision.title}
+                        className="absolute opacity-0 invisible  ease-out duration-[.9s] transition-all sm:w-[320px] w-[230px]   right-[15%]  object-cover  group-hover:right-[25%] group-hover:opacity-100 group-hover:visible  group-hover:rotate-[10deg]"
+                      />
+                    </div>
                   </div>
                 </div>
               );
@@ -443,14 +461,16 @@ const HomeOne = () => {
 
       <section className=" pt-[120px] bg-accent">
         <div className="container">
-          <h2 className="mb-[62px]">Our customers</h2>
+          <h2 className="mb-[62px]" data-aos="fade-up">
+            Our customers
+          </h2>
 
           <Swiper
             onSlideChange={(swiper) => setReveiwIndex(swiper.activeIndex)}
             slidesPerView={1}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             modules={[Navigation, Autoplay]}
-            className="relative"
+            className=""
           >
             <SwiperSlide>
               <ReviewSliderContent
@@ -520,10 +540,13 @@ const HomeOne = () => {
 
       <section className="pt-5 pb-[120px] bg-accent">
         <div className="container">
-          <h2 className="text-center mb-[60px]">
+          <h2 className="text-center mb-[60px]" data-aos="fade-up">
             Creativity that tells <br /> your story
           </h2>
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-[30px]">
+          <div
+            className="grid lg:grid-cols-3 sm:grid-cols-2 gap-[30px]"
+            data-aos="zoom-in-down"
+          >
             <BlogContent
               blogImg={blog1}
               blogTitle="looking to create a as a personal portfolio"

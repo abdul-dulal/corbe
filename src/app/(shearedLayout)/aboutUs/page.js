@@ -37,7 +37,10 @@ const AboutUs = () => {
             From Vision to <br /> Reality
           </h2>
           <div className="relative">
-            <Image src={vision} alt="Vision" />
+            <div className="relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:bg-[rgba(255,255,255,.3)] after:opacity-100 after:z-[11] after:pointer-events-none after:hover:h-full after:hover:opacity-0 after:hover:transition-all after:hover:duration-[.4s] after:hover:ease-linear">
+              <Image src={vision} alt="Vision" />
+            </div>
+
             <PlayVideo />
           </div>
         </div>

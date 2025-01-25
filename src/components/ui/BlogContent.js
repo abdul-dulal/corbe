@@ -5,8 +5,12 @@ import React from "react";
 const BlogContent = ({ blogImg, blogTitle }) => {
   return (
     <div className="group">
-      <div className="duration-700 group-hover:-translate-y-5">
-        <Image src={blogImg} className="mb-[27px] w-full" alt="Blog" />
+      <div className="duration-700 group-hover:-translate-y-5 overflow-hidden">
+        <Image
+          src={blogImg}
+          className="scale-100 group-hover:scale-110 duration-700 mb-[27px] w-full"
+          alt="Blog"
+        />
         <p className="flex items-center gap-2">
           <svg
             width="11"
@@ -25,7 +29,7 @@ const BlogContent = ({ blogImg, blogTitle }) => {
         <h4 className=" mt-[10px]">
           <Link href="">{blogTitle}</Link>
         </h4>
-        <div className=" relative z-[9] mt-10 py-[22px] px-[30px] bg-transparent  text-secondary group-hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-secondary after:-z-[1]  group-hover:after:right-[50%] group-hover:after:left-0 group-hover:after:w-[100%] ">
+        <div className="inline-block relative z-[9] mt-10 py-[22px] px-[30px] bg-transparent  text-secondary group-hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-secondary after:-z-[1]  group-hover:after:right-[50%] group-hover:after:left-0 group-hover:after:w-[100%] ">
           <Link
             href="/"
             className="inline-block text-[17px] font-medium leading-[15px] capitalize"

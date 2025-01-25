@@ -195,25 +195,26 @@ const Service = ({ item }) => {
   ];
   const slicedServices = services.slice(0, item);
   return (
-    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-[30px]">
+    <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-[30px] ">
       {slicedServices.map((service) => {
         return (
-          <div className="group p-10 bg-white" key={service.title}>
+          <div className="group p-10 bg-white " key={service.title}>
             <span className="">{service.svg}</span>
             <h4 className="pt-[60px] pb-5">
               <Link href="/service-details">{service.title}</Link>
             </h4>
             <p className="text-light leading-[26px]">
               Elevate Your Brand with Inspired people to gain knowledge about to
-              is invest and save their money{" "}
+              is invest and save their money
             </p>
-            <button className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-transparent  text-secondary capitalize group-hover:text-white duration-500 border border-solid border-secondary after:absolute after:content-['']  after:h-full after:left-[50%] after:top-0 after:w-0 after:transition-all after:duration-500 after:bg-secondary group-hover:after:-z-[1]  after:hover:right-[50%] group-hover:after:left-0 group-hover:after:w-[100%] ">
+            <button className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-transparent text-secondary capitalize group-hover:text-white duration-500 border border-solid border-secondary overflow-hidden">
+              <span className="absolute inset-0 bg-secondary scale-x-0 group-hover:scale-x-100 transform transition-transform duration-500 origin-center z-[-1]"></span>
               <Link
                 href="/"
-                className="inline-block text-[17px] font-medium leading-[15px] capitalize"
+                className="inline-block text-[17px] font-medium leading-[15px] capitalize relative z-[1]"
               >
                 learn more
-                <span className="inline-block pl-[10px] ">
+                <span className="inline-block pl-[10px]">
                   <svg
                     width="15"
                     height="13"

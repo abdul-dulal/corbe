@@ -16,17 +16,53 @@ const Trusted = () => {
       <div className="container">
         <p className="text-center text-light">We’re Trusted By Thousands </p>
         <div className="flex flex-wrap justify-between mt-10 ">
-          <Image src={tr1} alt="Trusted Thousands" />
-          <Image src={tr2} alt="Trusted Thousands" />
-          <Image src={tr3} alt="Trusted Thousands" />
-          <Image src={tr4} alt="Trusted Thousands" />
-          <Image src={tr5} alt="Trusted Thousands" />
+          <Image
+            src={tr1}
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr2}
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr3}
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr4}
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr5}
+            alt="Trusted Thousands"
+          />
         </div>
-        <div className="flex flex-wrap justify-around mt-5">
-          <Image src={tr6} alt="Trusted Thousands" />
-          <Image src={tr7} alt="Trusted Thousands" />
-          <Image src={tr8} alt="Trusted Thousands" />
-          <Image src={tr9} alt="Trusted Thousands" />
+        <div className="flex flex-wrap justify-around mt-8">
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr6}
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr7}
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr8}
+            alt="Trusted Thousands"
+          />
+          <Image
+            className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"
+            src={tr9}
+            alt="Trusted Thousands"
+          />
         </div>
       </div>
     </div>

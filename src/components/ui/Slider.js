@@ -14,7 +14,7 @@ import rightShuffle2 from "@/public/img/HomeOne/rightshuffle2.png";
 import Image from "next/image";
 const Slider = () => {
   return (
-    <div className="w-full max-w-[1200px] mx-auto">
+    <div className="">
       <Swiper
         effect={"coverflow"}
         centeredSlides={true}
@@ -31,10 +31,10 @@ const Slider = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"
       >
-        {[leftShuffle, leftShuffle2, about, rightShuffle, rightShuffle2].map(
+        {[about, leftShuffle, leftShuffle2, rightShuffle, rightShuffle2].map(
           (src, index) => (
             <SwiperSlide key={index}>
-              <div className="relative">
+              <div className="relative ">
                 <Image src={src} alt={`Slide ${index + 1}`} className="" />
 
                 <div className="absolute inset-0 flex items-center justify-center">

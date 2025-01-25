@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import hero from "@/public/img/HomeTwo/hero.png";
@@ -28,8 +28,11 @@ import Gellary from "@/src/components/ui/Gellary";
 import Testimonial from "@/src/components/ui/Testimonial";
 import GellaryButton from "@/src/components/ui/GellaryButton";
 import PlayVideo from "@/src/components/ui/PlayVideo";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const HomeTwo = () => {
+  const [show, setShow] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const alwaysOpenIndex = 1;
 
@@ -204,25 +207,37 @@ const HomeTwo = () => {
       ),
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <div>
       {/* Corbe_Hero_Start */}
+
       <section>
         <div className="container">
-          <div class="flex items-center space-x-4">
-            <h1 class="lg:text-[80px] md:text-[60px] sm:text-[45px] text-[28px] font-bold text-secondary md:leading-[100px] sm:leading-[70px] leading-[45px]">
+          <div className="flex items-center space-x-4" data-aos="fade-up">
+            <h1 className="lg:text-[80px] md:text-[60px] sm:text-[45px] text-[28px] font-bold text-secondary md:leading-[100px] sm:leading-[70px] leading-[45px]">
               Our Blueprint for
             </h1>
-            <div class="flex-1 border-t-[2px] border-secondary"></div>
+            <div className="relative flex-1 w-full  h-[2px] bg-secondary after:absolute after:content-[''] after:h-[4px] after:w-2 after:bg-white after:left-0 after:bottom-0 line "></div>
           </div>
           <h2
             className={`lg:text-[80px] md:text-[55px] sm:text-[45px] text-[28px] font-light text-secondary md:leading-[100px] sm:leading-[70px] leading-[45px] `}
+            data-aos="fade-up"
           >
             Building Your Dream Brand
           </h2>
           <div className="grid grid-cols-12 justify-between 2xl:gap-[129px] lg:gap-[100px] gap-0  mt-[100px]">
-            <div className="lg:col-span-7 col-span-12">
-              <Image src={hero} className="w-full" alt="Hero" />
+            <div className="lg:col-span-7 col-span-12 ">
+              <div className="relative transition-all duration-[.4s] ease-out after:absolute after:content-[''] after:pointer-events-none after:opacity-[1] after:z-[3] after:left-1/2 after:top-0 after:right-1/2 after:bottom-0 after:bg-[rgba(255,255,255,0.3)] hover:after:right-0 hover:after:left-0 hover:after:opacity-0 hover:after:transition-all hover:after:duration-[.9s] hover:after:ease-linear">
+                <Image src={hero} className="w-full" alt="Hero" />
+              </div>
             </div>
             <div className="lg:col-span-4 col-span-12 ">
               <div className="lg:block flex flex-wrap justify-between lg:mt-0 mt-10">
@@ -239,11 +254,9 @@ const HomeTwo = () => {
                   </Link>
                 </div>
               </div>
-              <Image
-                src={heroTwo}
-                className="lg:w-[88%] md:w-[50%] w-full"
-                alt="Hero Image"
-              />
+              <div className="relative transition-all duration-[.4s] ease-out after:absolute after:content-[''] after:pointer-events-none after:opacity-[1] after:z-[3] after:top-1/2 after:right-0 after:bottom-1/2 after:left-0 after:bg-[rgba(255,255,255,0.3)] hover:after:top-0 hover:after:bottom-0 hover:after:opacity-0 hover:after:transition-all hover:after:duration-[.9s] hover:after:ease-linear">
+                <Image src={heroTwo} className=" w-full" alt="Hero Image" />
+              </div>
             </div>
           </div>
         </div>
@@ -252,12 +265,18 @@ const HomeTwo = () => {
       <div className="-mt-[90px] pt-[201px] pb-[83px] bg-primary">
         <div className="container">
           <div className="flex flex-wrap gap-10 justify-between    ">
-            <Review reviewNumber="$4.5M+" reviewTitle="Monthly Revenue" />
-            <Review reviewNumber="$1.5k+" reviewTitle=" Project Delivered" />
-            <Review
-              reviewNumber="$1000+"
-              reviewTitle="  Total User in the World"
-            />
+            <div data-aos="zoom-in-up">
+              <Review reviewNumber="$4.5M+" reviewTitle="Monthly Revenue" />
+            </div>
+            <div data-aos="zoom-in">
+              <Review reviewNumber="$1.5k+" reviewTitle=" Project Delivered" />
+            </div>
+            <div data-aos="zoom-in-down">
+              <Review
+                reviewNumber="$1000+"
+                reviewTitle="  Total User in the World"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -266,7 +285,10 @@ const HomeTwo = () => {
       <section className="py-[170px] bg-accent">
         <div className="container">
           <div className="grid grid-cols-12 xl:gap-[100px] lg:gap-20  items-center ">
-            <div className="xl:col-span-7 lg:col-span-6 col-span-12">
+            <div
+              className="xl:col-span-7 lg:col-span-6 col-span-12"
+              data-aos="zoom-in-down"
+            >
               <h2 className="xl:text-[60px] lg:text-[45px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize font-bold mb-[30px]">
                 Never Get Stuck Designing
               </h2>
@@ -288,8 +310,15 @@ const HomeTwo = () => {
               </ul>
               <ButtonMore buttonTitle="Learn More" />
             </div>
-            <div className="xl:col-span-5  lg:col-span-6 col-span-12 lg:mt-0 mt-12">
-              <Image src={about} className="w-full" alt="About" />
+            <div
+              className="xl:col-span-5  lg:col-span-6 col-span-12 lg:mt-0 mt-12"
+              data-aos="zoom-in-up"
+            >
+              <div className="relative overflow-hidden">
+                <div className="image-reveal absolute top-0 left-0 w-full h-full bg-white z-10  imag-reveal-right"></div>
+
+                <Image src={about} className="w-full" alt="About" />
+              </div>
             </div>
           </div>
         </div>
@@ -298,7 +327,10 @@ const HomeTwo = () => {
       {/* Corbe_Service_Start */}
       <section className="bg-accent pb-[120px]">
         <div className="container">
-          <div className="flex flex-wrap justify-between items-center pb-[60px]">
+          <div
+            className="flex flex-wrap justify-between items-center pb-[60px]"
+            data-aos="fade-up"
+          >
             <h2>
               Solutions for <br />
               Every Vision
@@ -386,21 +418,29 @@ const HomeTwo = () => {
       {/* Corbe_Gellary_Start */}
       <section className="bg-accent">
         <div className="container">
-          <h2 className="text-center sm:pb-[100px] pb-[60px]">
+          <h2
+            className="text-center sm:pb-[100px] pb-[60px]"
+            data-aos="fade-up"
+          >
             impactful Results for <br className="sm:block hidden" /> Leading
             Brands
           </h2>
           <div className="grid md:grid-cols-2 xl:gap-[250px] lg:gap-24 gap-10">
-            <Gellary gellary={gellary} gellaryTitle="Galaxia Branding" />
+            <div data-aos="zoom-in-down">
+              <Gellary gellary={gellary} gellaryTitle="Galaxia Branding" />
+            </div>
 
-            <div className="relative xl:mt-[200px]">
+            <div className="relative xl:mt-[200px]" data-aos="zoom-in-up">
               <Gellary gellary={gellary2} gellaryTitle="Layout Branding" />
               <button className="absolute sm:top-[30%] top-[25%] sm:left-[30%] left-[40%] sm:w-[182px] w-[130px] sm:h-[182px] h-[130px] bg-[#083C2F] rounded-full sm:text-[17px] text-[15px] leading-[15px] font-semibold text-center text-white">
                 Learn More
               </button>
             </div>
           </div>
-          <div className="md:ml-[110px] xl:mt-0 mt-14 ml-0 pb-[100px]">
+          <div
+            className="md:ml-[110px] xl:mt-0 mt-14 ml-0 pb-[100px]"
+            data-aos="zoom-in-down"
+          >
             <div>
               <Image
                 src={gellary3}
@@ -424,7 +464,7 @@ const HomeTwo = () => {
       {/* Corbe_Testimonial_Start */}
       <section className="bg-accent pt-[120px] pb-[300px]">
         <div>
-          <h2 className="text-center pb-[60px]">
+          <h2 className="text-center pb-[60px]" data-aos="fade-up">
             Trusted by Top <br /> Brands
           </h2>
           <div className="flex flex-col overflow-hidden pb-[30px]">

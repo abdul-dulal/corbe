@@ -6,7 +6,10 @@ const Cta = () => {
   return (
     <div>
       <div className="container">
-        <div className="flex flex-wrap items-center justify-between">
+        <div
+          className="flex flex-wrap items-center justify-between"
+          data-aos="fade-up"
+        >
           <div>
             <h3 className="text-[28px] leading-[30px] font-bold mb-[10px]">
               Want to Transform Your Brand too?

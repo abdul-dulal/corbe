@@ -22,7 +22,9 @@ const BreadCumb = ({ currentPage }) => {
               />
             </svg>
           </span>
-          <span className="inline-block capitalize">{currentPage}</span>
+          <Link href="/#" className="inline-block capitalize">
+            {currentPage}
+          </Link>
         </h5>
       </div>
     </section>

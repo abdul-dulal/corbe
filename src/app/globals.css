@@ -71,7 +71,7 @@ li:hover .sub-menu {
   transform: rotateX(0deg);
 }
 
-.Corbe_counter {
+.corbe_counter {
   animation: moveUpDown 10s infinite linear;
 }
 
@@ -87,6 +87,21 @@ li:hover .sub-menu {
     transform: translateY(0);
   }
 }
+.corbe_talk {
+  animation: moveLeftRight 10s infinite linear;
+}
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .swiper-pagination {
   display: flex;
@@ -99,6 +114,18 @@ li:hover .sub-menu {
   z-index: 99 !important;
 }
 
+.circle {
+  animation: rotate 14s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
 .swiper-pagination-bullet {
   background: transparent !important;
   color: white !important;
@@ -190,5 +217,59 @@ li:hover .sub-menu {
 
   100% {
     transform: translateX(-50vw);
+  }
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.imag-reveal-left {
+  animation: revealAnimation 3s ease-in-out forwards;
+}
+
+@keyframes revealAnimation {
+  to {
+    transform: translateX(100%);
+  }
+}
+.imag-reveal-right {
+  animation: revealAnimation 3s ease-in-out forwards;
+}
+
+@keyframes revealAnimation {
+  to {
+    transform: translateX(-100%);
+  }
+}
+.corbe_service:hover .icon {
+  animation: effect 0.5s forwards ease-in-out 0s;
+}
+
+@keyframes effect {
+  0% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(-1);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.line::after {
+  animation: line 5s ease infinite alternate;
+}
+
+@keyframes line {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(400px);
   }
 }

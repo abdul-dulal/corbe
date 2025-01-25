@@ -11,10 +11,10 @@ const PlayVideo = () => {
     e.stopPropagation();
   };
   return (
-    <div>
+    <div className="">
       <button
         onClick={togglePopup}
-        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[182px] w-[120px] sm:h-[182px] h-[120px] rounded-full  bg-white text-center corbe_play"
+        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[182px] w-[120px] sm:h-[182px] h-[120px] rounded-full  bg-white text-center "
       >
         <span className=" sm:text-[17px] text-[14px] leading-4 font-bold text-secondary">
           Play Video

@@ -149,8 +149,11 @@ const ProvideService = () => {
     <div className="flex flex-wrap gap-10 justify-between">
       {services.map((service) => {
         return (
-          <div key={service.id} className="flex gap-5">
-            <span>{service.svg}</span>
+          <div
+            key={service.id}
+            className="flex gap-5  cursor-pointer corbe_service"
+          >
+            <span className="icon">{service.svg}</span>
             <h4 className="text-light">
               {service.title.split(" ").map((word) => (
                 <div key={word}>{word}</div>
