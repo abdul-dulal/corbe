@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { EffectCoverflow, Navigation } from "swiper/modules";
 
 import about from "@/public/img/HomeOne/about.png";
 import shuffle from "@/public/img/HomeOne/shuffle.png";
@@ -39,7 +39,7 @@ const Slider = () => {
           modifier: 1,
         }}
         modules={[EffectCoverflow, Navigation]}
-        className="mySwiper "
+        className="mySwiper"
         breakpoints={{
           620: {
             slidesPerView: 1,
@@ -65,13 +65,19 @@ const Slider = () => {
       >
         {[about, shuffle, shuffle2, shuffle3, shuffle].map((src, index) => (
           <SwiperSlide key={index}>
-            <div className="relative flex items-center justify-center ">
-              <Image src={src} alt={`Slide ${index + 1}`} className="w-full" />
+            <div className="relative flex items-center justify-center h-full">
+              {/* Ensure image is aligned */}
+              <Image
+                src={src}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-auto object-contain"
+              />
 
+              {/* Button overlaid centrally */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <Link
                   href="/"
-                  className="flex items-center justify-center sm:w-[120px] w-[100px] sm:h-[120px] h-[100px] rounded-full bg-primary sm:text-base text-[12px] leading-4 font-medium text-secondary corbe_review"
+                  className="flex items-center justify-center sm:w-[120px] w-[100px] sm:h-[120px] h-[100px] rounded-full bg-primary sm:text-base text-[12px] leading-4 font-medium text-secondary"
                 >
                   View Now
                 </Link>
