@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import line from "@/public/img/HomeOne/line.png";
+import line2 from "@/public/img/HomeOne/line2.png";
 
 const SliderContent = ({ bgImg, title, activeIndex, index }) => {
   return (
     <div
-      className="relative h-[900px] flex items-center"
+      className="relative h-[900px] flex items-center overflow-hidden"
       style={{
         backgroundImage: `url(${bgImg})`,
         backgroundRepeat: "no-repeat",
@@ -14,7 +16,7 @@ const SliderContent = ({ bgImg, title, activeIndex, index }) => {
       }}
     >
       <div className="container relative ">
-        <div className="relative z-10">
+        <div className="relative z-[100]">
           <h2
             className={`lg:text-[80px] md:text-[60px] sm:text-[45px] text-[28px] font-light text-white md:leading-[100px] sm:leading-[70px] leading-[45px] ${
               activeIndex == index ? "slider_title" : ""
@@ -52,7 +54,13 @@ const SliderContent = ({ bgImg, title, activeIndex, index }) => {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-50 "></div>
+      <div className="absolute right-0 -bottom-20 ">
+        <Image src={line} alt="" />
+      </div>
+      <div className="absolute right-0 -bottom-24 ">
+        <Image src={line2} alt="" />
+      </div>
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-[99]"></div>
     </div>
   );
 };

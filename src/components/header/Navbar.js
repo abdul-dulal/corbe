@@ -24,9 +24,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-[9999] py-[30px]  ${
+      className={`z-[999] py-[30px]  ${
         isSticky
-          ? "fixed top-0 left-0 w-full bg-[#083C2F]  is-sticky mt-0"
+          ? "fixed top-0 left-0 w-full bg-[#083C2F]  is_sticky mt-0"
           : "bg-transparent relative  "
       }`}
     >

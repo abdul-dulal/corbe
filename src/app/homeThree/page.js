@@ -216,7 +216,10 @@ const HomeThree = () => {
             From Vision to <br /> Reality
           </h2>
           <div className="relative">
-            <Image src={vision} alt="Vision" />
+            <div className="relative transition-all duration-[.4s] ease-out after:absolute after:content-[''] after:pointer-events-none after:opacity-[1] after:z-[3] after:top-1/2 after:right-0 after:bottom-1/2 after:left-0 after:bg-[rgba(255,255,255,0.3)] hover:after:top-0 hover:after:bottom-0 hover:after:opacity-0 hover:after:transition-all hover:after:duration-[.9s] hover:after:ease-linear">
+              <Image src={vision} alt="Vision" />
+            </div>
+
             <PlayVideo />
           </div>
         </div>

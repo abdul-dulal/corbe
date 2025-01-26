@@ -314,11 +314,7 @@ const HomeTwo = () => {
               className="xl:col-span-5  lg:col-span-6 col-span-12 lg:mt-0 mt-12"
               data-aos="zoom-in-up"
             >
-              <div className="relative overflow-hidden">
-                <div className="image-reveal absolute top-0 left-0 w-full h-full bg-white z-10  imag-reveal-right"></div>
-
-                <Image src={about} className="w-full" alt="About" />
-              </div>
+              <Image src={about} className="w-full" alt="About" />
             </div>
           </div>
         </div>
@@ -409,7 +405,9 @@ const HomeTwo = () => {
         </div>
         <div className="container">
           <div className="relative">
-            <Image src={video} alt="" />
+            <div className="relative after:absolute after:content-[''] after:left-0 after:top-0 after:w-full after:h-0 after:bg-[rgba(255,255,255,.3)] after:opacity-100 after:z-[11] after:pointer-events-none after:hover:h-full after:hover:opacity-0 after:hover:transition-all after:hover:duration-[.4s] after:hover:ease-linear">
+              <Image src={video} alt="" />
+            </div>
             <PlayVideo />
           </div>
         </div>

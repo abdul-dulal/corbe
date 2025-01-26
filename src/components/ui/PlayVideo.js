@@ -14,26 +14,26 @@ const PlayVideo = () => {
     <div className="">
       <button
         onClick={togglePopup}
-        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[182px] w-[120px] sm:h-[182px] h-[120px] rounded-full  bg-white text-center "
+        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[140px] w-[110px] sm:h-[140px] h-[110px] rounded-full  bg-white text-center corbe_play"
       >
-        <span className=" sm:text-[17px] text-[14px] leading-4 font-bold text-secondary">
+        <span className=" sm:text-[17px] text-[12px] leading-4 font-semibold text-secondary ">
           Play Video
         </span>
       </button>
       {isOpen && (
         <div
           onClick={togglePopup}
-          className="fixed inset-0 z-[1001] flex items-center justify-center bg-black bg-opacity-75"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-75 duration-[.8s]"
         >
           <button
             onClick={togglePopup}
-            className="h-8 w-8 flex items-center justify-center p-[2px] rounded-full border border-solid border-gray-300 absolute top-2 right-2 text-2xl text-white"
+            className="absolute top-4 right-4 flex items-center justify-center w-10 h-10 p-[2px] rounded-full border border-solid border-gray-300 text-2xl text-white"
           >
             x
           </button>
           <div
-            onClick={closePopup}
-            className="relative w-[90%] h-[90%] bg-white rounded"
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-[90%] h-[90%]  rounded slide_up"
           >
             <iframe
               className="w-full h-full"
@@ -41,7 +41,7 @@ const PlayVideo = () => {
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
