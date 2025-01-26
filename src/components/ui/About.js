@@ -27,7 +27,7 @@ const About = () => {
               Elevate Your Brand with Inspired Design Elevate Your Brand with
               Inspired Design Financial planners help people to gain
             </p>
-            <div className="flex flex-wrap gap-8 mt-[60px]">
+            <div className="flex flex-wrap gap-6 mt-[60px]">
               <div data-aos="zoom-in-up">
                 <Review reviewNumber="4k+" reviewTitle="Team member" />
               </div>

@@ -1,3 +1,4 @@
+"use client";
 import About from "@/src/components/ui/About";
 import BreadCumb from "@/src/components/ui/BreadCumb";
 import ButtonMore from "@/src/components/ui/ButtonMore";
@@ -9,9 +10,18 @@ import Testimonial from "@/src/components/ui/Testimonial";
 import vision from "@/public/img/HomeThree/vision.png";
 import Trusted from "@/src/components/ui/Trusted";
 import Image from "next/image";
-import React from "react";
-
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <div>
       {/* Corbe_Breadcumb */}
@@ -33,7 +43,7 @@ const AboutUs = () => {
       {/* Corbe_Vision_Start */}
       <section className="bg-primary lg:h-[770px] sm:h-[500px] h-[400px]">
         <div className="container">
-          <h2 className="text-center pt-[120px] pb-[60px]">
+          <h2 className="text-center pt-[120px] pb-[60px]" data-aos="fade-up">
             From Vision to <br /> Reality
           </h2>
           <div className="relative">
@@ -49,7 +59,10 @@ const AboutUs = () => {
       {/* Corbe_Testimonial_Start */}
       <section className=" bg-accent xl:pt-[350px] md:pt-[300px] sm:pt-[250px] pt-[160px] pb-[120px]  overflow-hidden">
         <div className="container  pb-[350px] relative">
-          <div className="flex flex-wrap items-center justify-between">
+          <div
+            className="flex flex-wrap items-center justify-between"
+            data-aos="fade-up"
+          >
             <h2 className="">
               Hear from Our <br /> Happy Clients
             </h2>
@@ -80,7 +93,7 @@ const AboutUs = () => {
       {/* Corbo_Team_Start */}
       <section className="pb-[100px] bg-accent pt-10">
         <div className="container">
-          <h2 className="text-center pb-32">
+          <h2 className="text-center pb-32" data-aos="fade-up">
             The Creative Minds <br /> Behind the Magic
           </h2>
           <Team />

@@ -32,7 +32,6 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 
 const HomeTwo = () => {
-  const [show, setShow] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const alwaysOpenIndex = 1;
 
