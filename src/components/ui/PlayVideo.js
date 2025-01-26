@@ -14,11 +14,9 @@ const PlayVideo = () => {
     <div className="">
       <button
         onClick={togglePopup}
-        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[140px] w-[110px] sm:h-[140px] h-[110px] rounded-full  bg-white text-center corbe_play"
+        className="absolute sm:top-[35%] top-[25%] sm:left-[42%] left-[35%] flex items-center justify-center sm:w-[140px] w-[110px] sm:h-[140px] h-[110px] rounded-full  bg-white text-center sm:text-[17px] text-[12px] leading-4 font-medium text-secondary corbe_play"
       >
-        <span className=" sm:text-[17px] text-[12px] leading-4 font-semibold text-secondary ">
-          Play Video
-        </span>
+        Play Video
       </button>
       {isOpen && (
         <div

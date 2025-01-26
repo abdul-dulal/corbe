@@ -12,10 +12,8 @@ import "swiper/css/autoplay";
 import about from "@/public/img/HomeOne/about.png";
 import path from "@/public/img/HomeOne/layer.png";
 import design from "@/public/img/HomeOne/graphic-desing.png";
-import shuffle1 from "@/public/img/HomeOne/shuffle1.png";
-import shuffle2 from "@/public/img/HomeOne/shuffle2.png";
+
 import Image from "next/image";
-import c1 from "@/public/img/HomeOne/c1.png";
 import blog1 from "@/public/img/HomeOne/b1.png";
 import blog2 from "@/public/img/HomeOne/b2.png";
 import blog3 from "@/public/img/HomeOne/b3.png";
@@ -29,10 +27,8 @@ import ButtonMore from "@/src/components/ui/ButtonMore";
 import ServiceButton from "@/src/components/ui/ServiceButton";
 
 const HomeOne = () => {
-  const [visible, setVisible] = useState(false);
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [reviewIndex, setReveiwIndex] = useState(0);
 
   const visions = [
     {
@@ -210,14 +206,6 @@ const HomeOne = () => {
       img: blog3,
     },
   ];
-  const [isOpen, setIsOpen] = useState(false);
-  const togglePopup = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closePopup = (e) => {
-    e.stopPropagation();
-  };
 
   return (
     <div>
@@ -465,11 +453,11 @@ const HomeOne = () => {
           </div>
         </div>
       </section>
-      {/* Corbe_Review_Start */}
+      {/* Corbe_Tesimonial_Start */}
 
       <section className=" pt-[120px] bg-accent">
         <div className="container ">
-          <h2 className="" data-aos="fade-up">
+          <h2 className="mb-[62px]" data-aos="fade-up">
             Our customers
           </h2>
           <ReviewSliderContent />
