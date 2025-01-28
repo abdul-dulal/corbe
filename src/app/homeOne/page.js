@@ -33,7 +33,8 @@ const HomeOne = () => {
   const visions = [
     {
       id: 1,
-      title: "Seo Expert",
+      title: "Seo",
+      title2: "Expert",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -51,7 +52,8 @@ const HomeOne = () => {
     },
     {
       id: 2,
-      title: "Graphic Design",
+      title: "Graphic",
+      title2: "Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -81,7 +83,8 @@ const HomeOne = () => {
     },
     {
       id: 3,
-      title: "Layout Design",
+      title: "Layout",
+      title2: "Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -123,7 +126,8 @@ const HomeOne = () => {
     },
     {
       id: 4,
-      title: "Mobile Design",
+      title: "Mobile",
+      title2: "Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -153,7 +157,8 @@ const HomeOne = () => {
     },
     {
       id: 5,
-      title: "Web Design",
+      title: "Web",
+      title2: "Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -410,9 +415,7 @@ const HomeOne = () => {
                         <span>{vision.svg}</span>
                         <div>
                           <h5 className="lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500">
-                            {vision.title.split(" ").map((word) => (
-                              <div key={word}>{word}</div>
-                            ))}
+                            {vision.title} <br /> {vision.title2}
                           </h5>
                         </div>
                       </div>
