@@ -81,7 +81,7 @@ const HomeOne = () => {
     },
     {
       id: 3,
-      title: " Layout Design",
+      title: "Layout Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -123,7 +123,7 @@ const HomeOne = () => {
     },
     {
       id: 4,
-      title: "   Mobile Design",
+      title: "Mobile Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
@@ -153,7 +153,7 @@ const HomeOne = () => {
     },
     {
       id: 5,
-      title: " Web Design",
+      title: "Web Design",
       svg: (
         <svg
           className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
