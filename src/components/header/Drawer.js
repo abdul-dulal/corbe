@@ -104,27 +104,20 @@ const Drawer = ({ iconColor }) => {
                   </ul>
                 </li>
                 <li className="mt-3 border-b border-solid border-[rgba(255,255,255,0.079)] pb-5">
-                  <Link href="/about">About</Link>
+                  <Link href="/aboutUs">About</Link>
                 </li>
                 <li className="relative  mt-3">
                   <Link
-                    href="javascript:void(0)"
+                    href="/services"
                     className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
                   >
                     Service
                   </Link>
                 </li>
+
                 <li className="relative  mt-3">
                   <Link
-                    href="javascript:void(0)"
-                    className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
-                  >
-                    Projects
-                  </Link>
-                </li>
-                <li className="relative  mt-3">
-                  <Link
-                    href="javascript:void(0)"
+                    href="/blog"
                     className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
                   >
                     Blog

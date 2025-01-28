@@ -66,14 +66,12 @@ const Slider = () => {
         {[about, shuffle, shuffle2, shuffle3, shuffle].map((src, index) => (
           <SwiperSlide key={index}>
             <div className="relative flex items-center justify-center h-full">
-              {/* Ensure image is aligned */}
               <Image
                 src={src}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-auto object-contain"
               />
 
-              {/* Button overlaid centrally */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <Link
                   href="/"
@@ -89,7 +87,7 @@ const Slider = () => {
 
       <button
         onClick={() => swiperRef.current?.slidePrev()}
-        className={`flex items-center justify-center absolute left-0 top-1/2 z-10 h-20 w-20 rounded-full ${
+        className={`flex items-center justify-center absolute left-0 top-1/2 z-10 xs:h-20 h-16 xs:w-20 w-16 rounded-full ${
           isEnd ? "bg-black" : " bg-light"
         } `}
       >
@@ -110,7 +108,7 @@ const Slider = () => {
       <button
         onClick={() => swiperRef.current?.slideNext()}
         disabled={isEnd}
-        className={` w-20 h-20 rounded-full absolute right-0 top-1/2 z-10 flex items-center justify-center ${
+        className={` xs:w-20 w-16 xs:h-20 h-16 rounded-full absolute right-0 top-1/2 z-10 flex items-center justify-center ${
           isBeginning ? "bg-black" : "bg-light"
         }`}
       >
