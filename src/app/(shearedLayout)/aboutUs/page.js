@@ -28,7 +28,7 @@ const AboutUs = () => {
       <BreadCumb currentPage="about us" />
 
       {/* Corbe_About */}
-      <section className=" pt-[360px] pb-[120px] bg-accent">
+      <section className=" sm:pt-[360px] pt-[270px] pb-[120px] bg-accent">
         <About />
       </section>
 

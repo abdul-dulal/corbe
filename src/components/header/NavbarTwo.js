@@ -30,18 +30,16 @@ const NavbarTwo = () => {
       }`}
     >
       <div className="container flex items-center justify-between bg-transparent z-[999] ">
-        <div>
+        <Link href="#">
           <Image src={logo} alt="Logo" />
-        </div>
+        </Link>
         <NavList listColor="black" />
-        <div className=" relative z-[99] py-[22px] px-[30px] bg-primary text-secondary hover:text-white duration-500 after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:block hidden">
-          <Link
-            href="/"
-            className="text-[17px] font-medium leading-[15px] capitalize"
-          >
-            contact us
-          </Link>
-        </div>
+        <Link
+          href="/contact"
+          className=" relative text-[17px] font-medium leading-[15px] capitalize z-[99] py-[22px] px-[30px] bg-primary text-secondary hover:text-white duration-500 after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:block hidden"
+        >
+          contact us
+        </Link>
         <Drawer iconColor="black" />
       </div>
     </header>

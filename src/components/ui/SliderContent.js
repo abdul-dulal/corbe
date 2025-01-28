@@ -40,7 +40,7 @@ const SliderContent = ({ bgImg, title, activeIndex, index }) => {
             }`}
           >
             <Link
-              href="/"
+              href="/homeOne"
               className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize"
             >
               view profile

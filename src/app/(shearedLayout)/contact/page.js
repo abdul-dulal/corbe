@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div>
       <BreadCumb currentPage="Contact" />
-      <section className="pt-[120px] pb-[350px] bg-accent">
+      <section className="sm:pt-[120px] pt-[70px] pb-[350px] bg-accent">
         <div className="container">
           <div className="md:p-20 sm:p-12 p-6 bg-white rounded-[15px]">
             <div className="grid grid-cols-12 lg:gap-[60px]">

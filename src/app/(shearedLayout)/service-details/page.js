@@ -5,34 +5,13 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import ServiceList from "@/src/components/ui/ServiceList";
+import Link from "next/link";
 const ServiceDetails = () => {
   return (
     <div>
       <BreadCumb currentPage="service details" />
-      <section className="bg-accent pt-[120px] pb-[300px]">
+      <section className="bg-accent sm:pt-[120px] pt-[70px] pb-[300px]">
         <div className="container">
-          <h3 className="relative md:text-[28px] text-2xl  font-bold text-secondary leading-[30px] mb-[60px] after:absolute after:content-[''] after:-bottom-5 after:left-0 after:w-[70px] after:h-[3px] after:bg-[#083C2F]">
-            Service lists
-          </h3>
-          <div className=" bg-transparent mb-[60px]">
-            <ul className="flex flex-wrap border border-solid border-secondary rounded-[15px]">
-              <li className="py-10 sm:px-[60px] px-10 bg-white md:text-xl sm:text-lg text-[15px] font-bold leading-[26px] rounded-tl-[15px] rounded-bl-[15px]">
-                All
-              </li>
-              <li className="py-10 px-[60px]  md:text-xl sm:text-lg text-[15px]  leading-[26px] font-bold text-light ">
-                Graphic Design
-              </li>
-              <li className="py-10 px-[60px]  md:text-xl sm:text-lg text-[15px] leading-[26px]  font-bold text-light ">
-                Seo Expert
-              </li>
-              <li className="py-10 px-[60px]  md:text-xl sm:text-lg text-[15px] leading-[26px] font-bold text-light ">
-                Web Design
-              </li>
-              <li className="py-10 px-[62px]  md:text-xl sm:text-lg text-[15px] leading-[26px] font-bold text-light  rounded-tr-[15px] rounded-br-[15px] ">
-                Mobile Design
-              </li>
-            </ul>
-          </div>
           <div className="grid grid-cols-12 md:gap-[30px]">
             <div className=" md:col-span-8 col-span-12">
               <div className="relative">
@@ -106,26 +85,26 @@ const ServiceDetails = () => {
                 </p>
               </div>
             </div>
-            <div className=" md:col-span-4 col-span-12">
+            <div className=" md:col-span-4 col-span-12 md:mt-0 mt-10">
               <div className="py-[30px] pl-[30px] border border-solid border-secondary rounded-[15px]">
                 <h4 className="relative after:absolute after:content-[''] after:-bottom-[15px] after:left-0 after:bg-secondary after:w-[70px] after:h-[3px] mb-[34px]">
                   Popular Services
                 </h4>
                 <ul>
                   <li className="pb-[33px] md:text-xl sm:text-lg text-[15px] text-light font-bold leading-[26px]">
-                    Layout Design
+                    <Link href="/service-details">Layout Design</Link>
                   </li>
                   <li className="pb-[33px] md:text-xl sm:text-lg text-[15px] text-light font-bold leading-[26px]">
-                    Mobile Design
+                    <Link href="/service-details">Mobile Design</Link>
                   </li>
                   <li className="pb-[33px] md:text-xl sm:text-lg text-[15px] text-light font-bold leading-[26px]">
-                    Web Design
+                    <Link href="/service-details">Web Design</Link>
                   </li>
                   <li className="pb-[33px] md:text-xl sm:text-lg text-[15px] text-light font-bold leading-[26px]">
-                    Seo Expert
+                    <Link href="/service-details">Seo Expert</Link>
                   </li>
                   <li className="pb-[33px] md:text-xl sm:text-lg text-[15px] text-light font-bold leading-[26px]">
-                    Graphic Design
+                    <Link href="/service-details">Graphic Design</Link>
                   </li>
                 </ul>
               </div>

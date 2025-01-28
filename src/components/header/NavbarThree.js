@@ -30,13 +30,13 @@ const NavbarThree = () => {
       }`}
     >
       <div className="container flex items-center justify-between bg-transparent z-[999] ">
-        <div>
+        <Link href="/homeThree">
           <Image src={logo} alt="Logo" />
-        </div>
+        </Link>
         <NavList listColor="black" />
         <div className=" relative py-[22px] px-[30px] bg-transparent  text-secondary hover:text-secondary duration-500 border border-solid border-secondary hover:border-primary after:absolute after:content-['']  after:w-full after:top-[50%] after:right-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:inline-block hidden">
           <Link
-            href="/"
+            href="/contact"
             className="text-[17px] font-medium leading-[15px] capitalize"
           >
             contact us

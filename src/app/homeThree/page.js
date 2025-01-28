@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import queen from "@/public/img/HomeThree/queen.png";
 import group from "@/public/img/HomeThree/group.png";
@@ -15,8 +15,7 @@ import g5 from "@/public/img/HomeThree/g5.png";
 import vision from "@/public/img/HomeThree/vision.png";
 import PlayVideo from "@/src/components/ui/PlayVideo";
 import Testimonial from "@/src/components/ui/Testimonial";
-import "aos/dist/aos.css";
-import AOS from "aos";
+
 import About from "@/src/components/ui/About";
 import Cta from "@/src/components/ui/Cta";
 import Trusted from "@/src/components/ui/Trusted";
@@ -43,14 +42,6 @@ const HomeThree = () => {
       title: "Web Design",
     },
   ];
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 100,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
 
   return (
     <div>
@@ -59,12 +50,12 @@ const HomeThree = () => {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-20 overflow-hidden">
             <div>
-              <h2 className="xl:text-[60px] lg:text-[45px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize lg:text-left text-center font-bold -tracking-[2] block slider_parag">
+              <h2 className="2xl:text-[60px] xl:text-[55px] lg:text-[45px] lg:leading-[80px] sm:text-[36px] text-[25px] md:leading-[50px] sm:leading-[50px] leading-[35px] text-secondary capitalize lg:text-left text-center font-bold -tracking-[2] block slider_parag">
                 Our Creativity
-                <span className="inline-block ml-3">
+                <span className="inline-block ">
                   <Image src={queen} alt="Queen" />
                 </span>
-                <br />
+                <br className="" />
                 Meets Strategy
               </h2>
               <p className="leading-[26px] text-light mt-5 mb-[30px] lg:text-left text-center slider_parag">
@@ -72,14 +63,12 @@ const HomeThree = () => {
                 planners help people to gain knowledge about to is <br /> invest
                 and save their money Elevate
               </p>
-              <div className="inline-block group relative z-20   lg:m-0 m-auto mb-[46px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full">
-                <Link
-                  href="/"
-                  className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize"
-                >
-                  view profile
-                </Link>
-              </div>
+              <Link
+                href="/homeThree"
+                className="text-[17px] text-secondary hover:text-white duration-500 font-medium leading-[15px] capitalize inline-block  relative z-20   lg:m-0 m-auto mb-[46px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full"
+              >
+                view profile
+              </Link>
             </div>
             <div className="relative">
               <Image src={group} className="z-[999] w-full" alt="Group" />

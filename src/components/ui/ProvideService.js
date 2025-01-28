@@ -146,7 +146,7 @@ const ProvideService = () => {
     },
   ];
   return (
-    <div className="flex flex-wrap gap-10 justify-between">
+    <div className="flex flex-wrap gap-10 xs:justify-between justify-center">
       {services.map((service) => {
         return (
           <div

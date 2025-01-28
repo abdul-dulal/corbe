@@ -1,24 +1,23 @@
+"use client";
 import FooterThree from "@/src/components/footer/FooterThree";
 import NavbarThree from "@/src/components/header/NavbarThree";
-import { Unbounded } from "next/font/google";
-
-export const unbounded = Unbounded({
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 export default function HomeOneLayout({ children }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
-    <html lang="en">
-      <body className={unbounded.className}>
-        <div>
-          <NavbarThree />
-          {children}
-          <FooterThree />
-        </div>
-      </body>
-    </html>
+    <div>
+      <NavbarThree />
+      {children}
+      <FooterThree />
+    </div>
   );
 }

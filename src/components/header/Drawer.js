@@ -34,7 +34,7 @@ const Drawer = ({ iconColor }) => {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-screen lg:w-[500px] md:w-[420px] w-[300px] bg-[#083C2F] border-l border-solid border-white text-white transform z-[10000] overflow-y-scroll overflow-x-hidden ${
+        className={`fixed top-0 right-0 h-screen lg:w-[500px] md:w-[420px] w-[300px] bg-[#083C2F] border-l border-solid border-white text-white transform z-[99999] overflow-y-scroll overflow-x-hidden ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 ease-in-out`}
         onClick={(e) => e.stopPropagation()}
@@ -79,7 +79,7 @@ const Drawer = ({ iconColor }) => {
                   >
                     <li>
                       <Link
-                        href="/"
+                        href="/homeOne"
                         className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
                       >
                         Home One
@@ -87,7 +87,7 @@ const Drawer = ({ iconColor }) => {
                     </li>
                     <li>
                       <Link
-                        href="/"
+                        href="/homeTwo"
                         className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
                       >
                         Home Two
@@ -95,7 +95,7 @@ const Drawer = ({ iconColor }) => {
                     </li>
                     <li>
                       <Link
-                        href="/"
+                        href="/homeThree"
                         className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
                       >
                         Home Three

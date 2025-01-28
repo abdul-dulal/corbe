@@ -55,7 +55,7 @@ export default function ReviewSliderContent() {
               <FontAwesomeIcon icon={faStar} />
               <FontAwesomeIcon icon={faStar} />
             </div>
-            <p className="pt-4 xl:mb-10 lg:mb-2 mb-10 lg:w-[600px] w-full text-[#0A0C00] sm:text-[22px] text-xl leading-9 font-normal">
+            <p className="pt-4 xl:mb-10 lg:mb-2 mb-6 lg:w-[600px] w-full text-[#0A0C00] sm:text-[22px] text-xl xl:leading-9 leading-[26px] font-normal">
               {testimonials[currentSlide].quote}
             </p>
             <h5 className="sm:text-xl text-lg text-secondary leading-[26px] font-bold">

@@ -15,7 +15,7 @@ const FooterBootom = () => {
           </p>
           <FooterSocial />
         </div>
-        <div className="flex flex-wrap justify-between lg:mt-0 mt-10">
+        <div className="flex flex-wrap gap-10 justify-between lg:mt-0 mt-10">
           <div>
             <h5 className="text-xl text-secondary leading-[26px] font-bold mb-[30px]">
               Company
@@ -49,11 +49,11 @@ const FooterBootom = () => {
         </div>
       </div>
       <div className=" flex gap-5 flex-wrap justify-between items-center text-light mb-10 mt-[30px]">
-        <p className="leading-[26px]">
+        <p className="leading-[26px] text-center">
           &copy; Copyright 2025, All Rights Reserved
         </p>
 
-        <p className="leading-[26px] sm:mt-0 mt-3">
+        <p className="leading-[26px] sm:mt-0 mt-3 text-center">
           Privacy Policy <span>Terms & Conditions</span>{" "}
         </p>
       </div>

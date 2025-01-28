@@ -31,15 +31,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between  ">
-        <div>
+        <Link href="/homeOne">
           <Image src={logo} priority={true} alt="Logo" />
-        </div>
+        </Link>
         <NavList listColor="white" />
-        <div className=" relative py-[22px] px-[30px]  text-white hover:text-secondary duration-500 border border-solid border-white after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:inline-block hidden">
-          <Link
-            href="/"
-            className="text-[17px] font-medium leading-[15px] capitalize"
-          >
+        <div className=" relative  text-[17px] font-medium leading-[15px] capitalize  text-white hover:text-secondary duration-500 py-[22px] px-[30px] border border-solid border-white after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:inline-block hidden">
+          <Link href="/contact" className="">
             contact us
           </Link>
         </div>

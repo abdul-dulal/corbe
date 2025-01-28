@@ -10,7 +10,7 @@ const FooterOne = () => {
         <div className="flex flex-wrap items-center justify-between mb-[100px]">
           <div>
             <h2 className="mb-5" data-aos="fade-up">
-              Start your Journey <br />
+              Start your Journey <br className="sm:block hidden" />
               With Us
             </h2>
             <p className="text-light mb-10" data-aos="fade-up">
@@ -44,10 +44,12 @@ const FooterOne = () => {
           </ul>
           <FooterSocial />
         </div>
-        <div className="flex justify-between items-center text-light mb-10">
-          <p className="">&copy; Copyright 2025, All Rights Reserved</p>
+        <div className="flex flex-wrap gap-8 justify-between items-center text-light mb-10">
+          <p className="text-center">
+            &copy; Copyright 2025, All Rights Reserved
+          </p>
 
-          <p className=" ">
+          <p className=" text-center">
             Privacy Policy <span>Terms & Conditions</span>{" "}
           </p>
         </div>

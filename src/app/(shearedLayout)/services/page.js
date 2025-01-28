@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div>
       <BreadCumb currentPage="services" />
-      <div className="pt-[120px] pb-[300px] bg-accent">
+      <div className="sm:pt-[120px] pt-[70px] pb-[300px] bg-accent">
         <div className="container">
           <Service item={6} />
         </div>

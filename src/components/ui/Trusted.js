@@ -15,7 +15,7 @@ const Trusted = () => {
     <div className="bg-accent pb-[120px]">
       <div className="container">
         <p className="text-center text-light">We’re Trusted By Thousands </p>
-        <div className="flex flex-wrap justify-between mt-10 ">
+        <div className="flex flex-wrap justify-around mt-10 ">
           <Image
             src={tr1}
             className="duration-[.9s] hover:duration-[.9s]  hover:-translate-y-6 cursor-pointer"

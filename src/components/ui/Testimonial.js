@@ -5,7 +5,7 @@ import testimonial from "@/public/img/HomeTwo/testimonial.png";
 const Testimonial = () => {
   return (
     <div className="p-10 bg-white w-[630px]">
-      <span className="text-[25px] font-normal leading-[36px] ">
+      <span className="sm:text-[25px] text-xl font-normal leading-[36px] ">
         “Bussiness is the process of repai and volves a to various materials
         such shil tiles metal services may include Proper roofing is a crucial
         for protecting”

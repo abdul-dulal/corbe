@@ -3,10 +3,10 @@ import React from "react";
 
 const BreadCumb = ({ currentPage }) => {
   return (
-    <section className="md:h-[500px] h-[450px] bg-[#F0F2F0] -mt-[178px] flex items-center justify-center">
+    <section className="md:h-[500px] sm:h-[450px] h-[300px] bg-[#F0F2F0] sm:-mt-[178px] -mt-[150px] flex items-center justify-center">
       <div className="mt-8">
         <h2 className="mb-5 capitalize">{currentPage}</h2>
-        <h5 className="text-xl leading-[26px] font-bold text-center">
+        <h5 className="sm:text-xl text-lg leading-[26px] font-bold text-center">
           <Link href="/homeOne"> Home</Link>
           <span className="inline-block mx-5">
             <svg

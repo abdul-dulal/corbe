@@ -11,7 +11,7 @@ const Cta = () => {
           data-aos="fade-up"
         >
           <div>
-            <h3 className="text-[28px] leading-[30px] font-bold mb-[10px]">
+            <h3 className="lg:text-[28px] md:text-[25px] text-xl leading-[30px] font-bold mb-[10px]">
               Want to Transform Your Brand too?
             </h3>
             <p className="text-light">
@@ -19,8 +19,8 @@ const Cta = () => {
             </p>
           </div>
           <div className="group relative z-[9] mt-6 py-[22px] px-[30px] bg-secondary   text-white capitalize hover:text-secondary duration-500  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full ">
-            <div
-              href="/"
+            <Link
+              href="/contact"
               className="inline-block text-[17px] font-medium leading-[15px] capitalize"
             >
               Contact Us
@@ -40,7 +40,7 @@ const Cta = () => {
                   />
                 </svg>
               </span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

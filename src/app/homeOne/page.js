@@ -215,15 +215,15 @@ const HomeOne = () => {
           slidesPerView={1}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           modules={[Navigation, Pagination, Autoplay]}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 4000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             clickable: true,
             renderBullet: (index, className) => {
               const formattedIndex = (index + 1).toString().padStart(2, "0");
-              return `<span class="${className}">${formattedIndex}</span>`;
+              return `<span class="${className}  relative bottom-[120px]  left-0 z-[99]">${formattedIndex}</span>`;
             },
           }}
         >
@@ -258,10 +258,10 @@ const HomeOne = () => {
       <div className="bg-primary py-20 -mt-2">
         <div className="container ">
           <div
-            className="flex flex-wrap items-center lg:justify-center justify-between lg:gap-[177px] md:gap-[70px] sm:gap-10 gap-4"
+            className="flex flex-wrap items-center justify-center  lg:gap-[177px] md:gap-[70px] sm:gap-10 gap-8"
             data-aos="fade-up"
           >
-            <div className="flex items-center gap-[7px] relative after:absolute lg:after:-right-[88px] sm:after:-right-10 after:-right-4  after:top-0 sm:after:w-[1px] after:h-20 after:bg-light">
+            <div className="flex items-center gap-[7px] relative after:absolute lg:after:-right-[88px]  sm:after:-right-7 after:-right-4  after:top-0 sm:after:w-[1px] after:h-20 after:bg-light">
               <svg
                 className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
                 viewBox="0 0 65 65"
@@ -285,7 +285,7 @@ const HomeOne = () => {
                 Always <br /> updated
               </span>
             </div>
-            <div className="flex items-center gap-[7px] relative after:absolute lg:after:-right-[88px] sm:after:-right-10 after:-right-4  after:top-0 sm:after:w-[1px] after:h-20 after:bg-light">
+            <div className="flex items-center gap-[7px] relative after:absolute lg:after:-right-[88px] sm:after:-right-7 after:-right-4  after:top-0 sm:after:w-[1px] after:h-20 after:bg-light">
               <svg
                 className=" sm:w-[65px] w-[50px] sm:h-[65px] h-[50px]"
                 viewBox="0 0 67 65"
@@ -378,7 +378,7 @@ const HomeOne = () => {
       {/* Corbe_Review_Start */}
       <div className="pt-20 pb-[83px]" data-aos="fade-up">
         <div className="container">
-          <div className="flex flex-wrap gap-10 justify-between">
+          <div className="flex flex-wrap gap-10 sm:justify-between justify-center">
             <Review reviewNumber="$4.5M+" reviewTitle="Monthly Revenue" />
             <Review reviewNumber="$1.5k+" reviewTitle=" Project Delivered" />
             <Review

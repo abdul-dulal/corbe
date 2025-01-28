@@ -40,7 +40,7 @@ const Blog = () => {
   return (
     <div>
       <BreadCumb currentPage="Blog" />
-      <section className="bg-accent pt-[120px] pb-[330px]">
+      <section className="bg-accent sm:pt-[120px] pt-[70px] pb-[330px]">
         <div className="container">
           <div className="grid grid-cols-12 lg:gap-[30px]">
             <div className="lg:col-span-8 col-span-12">
@@ -75,7 +75,7 @@ const Blog = () => {
                       </p>
                       <div className="mb-14 ">
                         <Link
-                          href="/"
+                          href="/blog-details"
                           className="text-[17px] text-secondary hover:text-white duration-500 font-medium leading-[15px] capitalize  relative z-20   py-[22px] px-8 border border-solid border-[#083C2F] bg-transparent  after:absolute after:content-['']  after:h-0 after:top-[50%] after:right-0 after:w-full after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full "
                         >
                           view profile
@@ -84,7 +84,7 @@ const Blog = () => {
                     </div>
                   );
                 })}
-                <div className="flex gap-5 justify-center items-center">
+                <div className="flex flex-wrap gap-5 justify-center items-center">
                   <button className="w-[67px] h-[67px] bg-white rounded-full block text-center">
                     01
                   </button>
@@ -118,7 +118,7 @@ const Blog = () => {
                   </div>
                 </form>
               </div>
-              <div className="p-[30px] bg-white border border-solid border-[#083C2F] rounded-[15px] mt-12">
+              <div className="p-[30px] bg-white border border-solid border-[#083C2F] rounded-[15px] mt-20">
                 <h4 className="relative after:absolute after:content-[''] after:-bottom-[10px] after:left-0 after:w-[84px] after:h-[2px] after:bg-[#083C2F] mb-[30px]">
                   Category
                 </h4>

@@ -28,8 +28,6 @@ import Gellary from "@/src/components/ui/Gellary";
 import Testimonial from "@/src/components/ui/Testimonial";
 import GellaryButton from "@/src/components/ui/GellaryButton";
 import PlayVideo from "@/src/components/ui/PlayVideo";
-import "aos/dist/aos.css";
-import AOS from "aos";
 
 const HomeTwo = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -206,14 +204,7 @@ const HomeTwo = () => {
       ),
     },
   ];
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 100,
-      easing: "ease-in-out",
-      once: true,
-    });
-  }, []);
+
   return (
     <div>
       {/* Corbe_Hero_Start */}
@@ -224,7 +215,7 @@ const HomeTwo = () => {
             <h1 className="lg:text-[80px] md:text-[60px] sm:text-[45px] text-[28px] font-bold text-secondary md:leading-[100px] sm:leading-[70px] leading-[45px]">
               Our Blueprint for
             </h1>
-            <div className="relative flex-1 w-full  h-[2px] bg-secondary after:absolute after:content-[''] after:h-[4px] after:w-2 after:bg-white after:left-0 after:bottom-0 line "></div>
+            <div className="relative flex-1 w-full  h-[2px] bg-secondary "></div>
           </div>
           <h2
             className={`lg:text-[80px] md:text-[55px] sm:text-[45px] text-[28px] font-light text-secondary md:leading-[100px] sm:leading-[70px] leading-[45px] `}
@@ -244,14 +235,12 @@ const HomeTwo = () => {
                   Planners help people to gain knowledge about to is invest and
                   save their money edge about to is invest and
                 </p>
-                <div className="inline-block group relative z-20   mb-[46px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full">
-                  <Link
-                    href="/"
-                    className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize"
-                  >
-                    view profile
-                  </Link>
-                </div>
+                <Link
+                  href="/homeTwo"
+                  className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize inline-block group relative z-20   mb-[70px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full"
+                >
+                  view profile
+                </Link>
               </div>
               <div className="relative transition-all duration-[.4s] ease-out after:absolute after:content-[''] after:pointer-events-none after:opacity-[1] after:z-[3] after:top-1/2 after:right-0 after:bottom-1/2 after:left-0 after:bg-[rgba(255,255,255,0.3)] hover:after:top-0 hover:after:bottom-0 hover:after:opacity-0 hover:after:transition-all hover:after:duration-[.9s] hover:after:ease-linear">
                 <Image src={heroTwo} className=" w-full" alt="Hero Image" />
@@ -263,7 +252,7 @@ const HomeTwo = () => {
       {/* Corbe_Review_Start */}
       <div className="-mt-[90px] pt-[201px] pb-[83px] bg-primary">
         <div className="container">
-          <div className="flex flex-wrap gap-10 justify-between    ">
+          <div className="flex flex-wrap gap-10 sm:justify-between  justify-center   ">
             <div data-aos="zoom-in-up">
               <Review reviewNumber="$4.5M+" reviewTitle="Monthly Revenue" />
             </div>
@@ -348,7 +337,7 @@ const HomeTwo = () => {
               ${
                 isOpen
                   ? "bg-primary lg:w-[410px] w-[300px]"
-                  : "bg-white w-[190px]"
+                  : "bg-white xs:w-[190px] w-[250px]"
               }
             `}
                 >
