@@ -409,14 +409,11 @@ const HomeOne = () => {
                       <div className="group  flex items-center  gap-[30px]">
                         <span>{vision.svg}</span>
                         <div>
-                          {vision.title.split(" ").map((word) => (
-                            <h5
-                              className="lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500"
-                              key={word}
-                            >
-                              {word}
-                            </h5>
-                          ))}
+                          <h5 className="lg:text-[28px] sm:text-2xl text-xl text-secondary sm:leading-[30px] leading-7 font-bold  duration-500">
+                            {vision.title.split(" ").map((word) => (
+                              <div key={word}>{word}</div>
+                            ))}
+                          </h5>
                         </div>
                       </div>
                       <Link
