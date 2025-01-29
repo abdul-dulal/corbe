@@ -204,9 +204,7 @@ const Drawer = ({ iconColor }) => {
                 </li>
                 <li className="h-9 w-9 bg-black rounded-full flex items-center justify-center">
                   <Link href="https://github.com" className="text-white">
-                    <Link href="https://github.com" className="text-xl">
-                      <FontAwesomeIcon icon={faGithub} />
-                    </Link>
+                    <FontAwesomeIcon icon={faGithub} />
                   </Link>
                 </li>
               </ul>
