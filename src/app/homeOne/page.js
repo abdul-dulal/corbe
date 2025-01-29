@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -28,6 +28,7 @@ import ServiceButton from "@/src/components/ui/ServiceButton";
 
 const HomeOne = () => {
   const swiperRef = useRef(null);
+  const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const visions = [
@@ -215,48 +216,57 @@ const HomeOne = () => {
   return (
     <div>
       <div className=" -mt-[140px] -z-[99]">
-        <Swiper
-          onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-          slidesPerView={1}
-          onSwiper={(swiper) => (swiperRef.current = swiper)}
-          modules={[Navigation, Pagination, Autoplay]}
-          // autoplay={{
-          //   delay: 4000,
-          //   disableOnInteraction: false,
-          // }}
-          pagination={{
-            clickable: true,
-            renderBullet: (index, className) => {
-              const formattedIndex = (index + 1).toString().padStart(2, "0");
-              return `<span class="${className}  relative bottom-[120px]  left-0 z-[99]">${formattedIndex}</span>`;
-            },
-          }}
-        >
-          <SwiperSlide>
-            <SliderContent
-              bgImg="/img/HomeOne/featureSlider.png"
-              title="Building Brands"
-              activeIndex={activeIndex}
-              index={0}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderContent
-              bgImg="/img/HomeOne/featureSlider2.png"
-              title="Our Strategy"
-              activeIndex={activeIndex}
-              index={1}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderContent
-              bgImg="/img/HomeOne/featureSlider.png"
-              title="Our Strategy"
-              activeIndex={activeIndex}
-              index={2}
-            />
-          </SwiperSlide>
-        </Swiper>
+        <div className="relative">
+          <Swiper
+            onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+            slidesPerView={1}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
+            modules={[Navigation, Pagination, Autoplay]}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              el: ".custom-pagination",
+              clickable: true,
+              renderBullet: (index, className) => {
+                const formattedIndex = (index + 1).toString().padStart(2, "0");
+                return `<span class="${className} inline-block text-white px-3">${formattedIndex}</span>`;
+              },
+            }}
+          >
+            <SwiperSlide>
+              <SliderContent
+                bgImg="/img/HomeOne/featureSlider.png"
+                title="Building Brands"
+                activeIndex={activeIndex}
+                index={0}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SliderContent
+                bgImg="/img/HomeOne/featureSlider2.png"
+                title="Our Strategy"
+                activeIndex={activeIndex}
+                index={1}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <SliderContent
+                bgImg="/img/HomeOne/featureSlider.png"
+                title="Our Strategy"
+                activeIndex={activeIndex}
+                index={2}
+              />
+            </SwiperSlide>
+          </Swiper>
+
+          <div className="absolute w-full bottom-[150px] xl:-left-10 -left-6">
+            <div className="max-w-[1320px] w-full mx-auto flex justify-center">
+              <div className="custom-pagination flex gap-4"></div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Corbe_Feature_Start */}

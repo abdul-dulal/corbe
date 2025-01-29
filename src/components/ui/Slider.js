@@ -65,12 +65,8 @@ const Slider = () => {
       >
         {[about, shuffle, shuffle2, shuffle3, shuffle].map((src, index) => (
           <SwiperSlide key={index}>
-            <div className="relative flex items-center justify-center h-full">
-              <Image
-                src={src}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-auto object-contain"
-              />
+            <div className="">
+              <Image src={src} alt={`Slide ${index + 1}`} className="" />
 
               <div className="absolute inset-0 flex items-center justify-center">
                 <Link

@@ -55,79 +55,78 @@ const Drawer = ({ iconColor }) => {
           </div>
 
           <div className=" px-[35px] pb-5">
-            <header>
-              <ul className="relative">
-                <li className="relative  ">
-                  <Link
-                    href="javascript:void(0)"
-                    className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
+            <ul className="relative">
+              <li className="relative  ">
+                <Link
+                  href="javascript:void(0)"
+                  className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
+                >
+                  Home
+                  <span
+                    onClick={() => setHome(!home)}
+                    className={`text-center h-[35px] w-[35px] border border-solid border-[rgba(255,255,255,0.079)] rounded-[3px] font-normal text-2xl duration-500 ${
+                      home ? "" : "bg-primary text-black"
+                    }`}
                   >
-                    Home
-                    <span
-                      onClick={() => setHome(!home)}
-                      className={`text-center h-[35px] w-[35px] border border-solid border-[rgba(255,255,255,0.079)] rounded-[3px] font-normal text-2xl duration-500 ${
-                        home ? "" : "bg-primary text-black"
-                      }`}
+                    {home ? "+" : "-"}
+                  </span>
+                </Link>
+                <ul
+                  className={`transition-all duration-500 bg-transparent  ease-in-out overflow-hidden px-3   ${
+                    home ? "max-h-0" : "max-h-40"
+                  } `}
+                >
+                  <li>
+                    <Link
+                      href="/homeOne"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
                     >
-                      {home ? "+" : "-"}
-                    </span>
-                  </Link>
-                  <ul
-                    className={`transition-all duration-500 bg-transparent  ease-in-out overflow-hidden px-3   ${
-                      home ? "max-h-0" : "max-h-40"
-                    } `}
-                  >
-                    <li>
-                      <Link
-                        href="/homeOne"
-                        className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
-                      >
-                        Home One
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/homeTwo"
-                        className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
-                      >
-                        Home Two
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/homeThree"
-                        className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
-                      >
-                        Home Three
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="mt-3 border-b border-solid border-[rgba(255,255,255,0.079)] pb-5">
-                  <Link href="/aboutUs">About</Link>
-                </li>
-                <li className="relative  mt-3">
-                  <Link
-                    href="/services"
-                    className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
-                  >
-                    Service
-                  </Link>
-                </li>
+                      Home One
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/homeTwo"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
+                    >
+                      Home Two
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/homeThree"
+                      className={`capitalize text-[16px] leading-[50px] font-normal text-white  border-b  border-solid border-[rgba(255,255,255,0.079)]  flex items-center justify-between`}
+                    >
+                      Home Three
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="mt-3 border-b border-solid border-[rgba(255,255,255,0.079)] pb-5">
+                <Link href="/aboutUs">About</Link>
+              </li>
+              <li className="relative  mt-3">
+                <Link
+                  href="/services"
+                  className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
+                >
+                  Service
+                </Link>
+              </li>
 
-                <li className="relative  mt-3">
-                  <Link
-                    href="/blog"
-                    className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li className="mt-3 border-b border-solid border-[rgba(255,255,255,0.079)] pb-5">
-                  <Link href="/contact">Contact</Link>
-                </li>
-              </ul>
-            </header>
+              <li className="relative  mt-3">
+                <Link
+                  href="/blog"
+                  className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li className="mt-3 border-b border-solid border-[rgba(255,255,255,0.079)] pb-5">
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+
             <div className="mt-10">
               <span className="md:text-xl text-base text-white font-bold">
                 Subscribe & Follow

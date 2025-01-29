@@ -46,12 +46,13 @@ li:hover .sub_menu {
 .corbe_talk {
   animation: moveLeftRight 10s infinite linear;
 }
-
+.custom-pagination {
+  max-width: 1290px;
+}
 .swiper-pagination {
-  max-width: 1320px;
+  max-width: 1320px !important;
   display: flex;
   gap: 25px;
-  /* justify-content: flex-start; */
   align-items: center;
 }
 
