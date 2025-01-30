@@ -14,7 +14,7 @@ const About = () => {
         </h2>
       </div>
       <div className="container relative pt-[60px]">
-        <div className="absolute  2xl:left-[10%] left-[5%] -top-[110px] sm:w-[100px] w-[90px] sm:h-[100px] h-[90px] bg-[#083C2F] circle"></div>
+        <div className="absolute  2xl:left-[10%] left-[5%] -top-[110px] sm:w-[100px] w-[90px] sm:h-[100px] h-[90px] bg-[#083C2F] corbe_circle"></div>
 
         <div className="relative grid lg:grid-cols-2 xl:gap-0 gap-10  z-[99]">
           <div className="relative transition-all duration-[.4s] ease-out after:absolute after:content-[''] after:pointer-events-none after:opacity-[1] after:z-[3] after:left-1/2 after:top-0 after:right-1/2 after:bottom-0 after:bg-[rgba(255,255,255,0.3)] hover:after:right-0 hover:after:left-0 hover:after:opacity-0 hover:after:transition-all hover:after:duration-[.9s] hover:after:ease-linear">

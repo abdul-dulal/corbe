@@ -1,6 +1,24 @@
+/*******************************
+Template Name: Corbe 
+Author Name: nsstheme 
+--------------------------------
+<---table of content--->
+1.  common section
+2.  header section
+3.  hero section
+4.  about section
+5.  testimonial section
+6.  service section
+7. footer section
+********************************/
+
+/* default start */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* default end */
+
+/* common start */
 
 * {
   padding: 0;
@@ -25,41 +43,27 @@
   padding-right: 15px;
   margin: auto;
 }
-.is_sticky {
-  animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
-  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-li .sub_menu {
+/* common end */
+
+/* header start */
+
+.corbe ul li .sub_menu {
   transform: rotateX(-90deg);
 }
 
-li:hover .sub_menu {
+.corbe li:hover .sub_menu {
   visibility: visible;
   opacity: 1;
   transform: rotateX(0deg);
 }
-
-.corbe_counter {
-  animation: moveUpDown 10s infinite linear;
+.is_sticky {
+  animation: 0.95s ease-in-out 0s normal none 1 running fadeInDown;
+  transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.corbe_talk {
-  animation: moveLeftRight 10s infinite linear;
-}
-.custom-pagination {
-  max-width: 1290px;
-}
-.swiper-pagination {
-  max-width: 1320px !important;
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
+/* header end */
 
-.circle {
-  animation: rotate 14s infinite linear;
-}
-
+/* hero start */
 .swiper-pagination-bullet {
   max-width: 1320px;
   background: transparent !important;
@@ -89,24 +93,43 @@ li:hover .sub_menu {
   animation: 0.7s ease-in-out 0.6s normal none 1 running fadeInLeft;
   animation-fill-mode: both;
 }
+.corbe_counter {
+  animation: moveUpDown 10s infinite linear;
+}
+/* hero end */
 
+/* about start */
+.corbe_circle {
+  animation: rotate 14s infinite linear;
+}
+/* about end */
+
+/* testimonial start */
 .corbe_review {
   animation: wave linear 1000ms infinite;
 }
-.corbe_play {
-  animation: wave2 linear 1000ms infinite;
-}
-
 .corbe_marque {
   animation: Scroll 40s linear infinite;
 }
 .corbe_marque_right {
   animation: rightToLeft 40s linear infinite;
 }
+.corbe_play {
+  animation: wave2 linear 1000ms infinite;
+}
+/* testimonial end */
 
+/* service start */
 .corbe_service:hover .icon {
   animation: effect 0.5s forwards ease-in-out 0s;
 }
+/* service end */
+
+/* footer start */
+.corbe_talk {
+  animation: moveLeftRight 10s infinite linear;
+}
+/* footer end */
 
 @keyframes fadeInDown {
   0% {

@@ -3,12 +3,15 @@ import List from "../ui/List";
 import FooterSocial from "./FooterSocial";
 import Image from "next/image";
 import footerLogo from "@/public/img/logo-black.png";
+import Link from "next/link";
 const FooterBootom = () => {
   return (
     <div className="container">
       <div className="grid lg:grid-cols-2 pb-14 border-b" data-aos="fade-up">
         <div className="space-y-5">
-          <Image src={footerLogo} alt="Logo" />
+          <Link href="/">
+            <Image src={footerLogo} alt="Logo" />
+          </Link>
           <p className=" sm:w-[448px] leading-[26px]">
             There are many variations of passages of Lorem Ipsum avalable, but
             the majority have suffered alteration

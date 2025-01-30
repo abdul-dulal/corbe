@@ -24,14 +24,14 @@ const Navbar = () => {
 
   return (
     <header
-      className={`z-[999] py-[30px]  ${
+      className={`corbe z-[999] py-[30px]  ${
         isSticky
           ? "fixed top-0 left-0 w-full bg-[#083C2F]  is_sticky mt-0"
           : "bg-transparent relative  "
       }`}
     >
       <div className="container flex items-center justify-between  ">
-        <Link href="/homeOne">
+        <Link href="/">
           <Image src={logo} priority={true} alt="Logo" />
         </Link>
         <NavList listColor="white" />

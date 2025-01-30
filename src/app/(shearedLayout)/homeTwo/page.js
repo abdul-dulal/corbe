@@ -237,7 +237,7 @@ const HomeTwo = () => {
                 </p>
                 <Link
                   href="/homeTwo"
-                  className="text-[17px] text-secondary group-hover:text-white duration-500 font-medium leading-[15px] capitalize inline-block group relative z-20   mb-[70px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full"
+                  className="text-[17px] text-secondary hover:text-white duration-500 font-medium leading-[15px] capitalize inline-block  relative z-20   mb-[70px]  py-[22px] px-8 bg-primary  after:absolute after:content-['']  after:w-full after:top-[50%] after:left-0 after:h-0 after:transition-all after:duration-500 after:bg-[#083C2F] after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full"
                 >
                   view profile
                 </Link>

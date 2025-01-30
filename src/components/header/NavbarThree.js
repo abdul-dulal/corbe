@@ -23,25 +23,24 @@ const NavbarThree = () => {
   }, []);
   return (
     <header
-      className={`z-[999] py-[30px] mb-[70px]  ${
+      className={`corbe z-[999] py-[30px] mb-[70px]  ${
         isSticky
           ? "fixed top-0 left-0 w-full bg-white shadow-lg backdrop-blur-lg  is_sticky mt-0"
           : "bg-transparent relative  "
       }`}
     >
       <div className="container flex items-center justify-between bg-transparent z-[999] ">
-        <Link href="/homeThree">
+        <Link href="/">
           <Image src={logo} alt="Logo" />
         </Link>
         <NavList listColor="black" />
-        <div className=" relative py-[22px] px-[30px] bg-transparent  text-secondary hover:text-secondary duration-500 border border-solid border-secondary hover:border-primary after:absolute after:content-['']  after:w-full after:top-[50%] after:right-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:inline-block hidden">
-          <Link
-            href="/contact"
-            className="text-[17px] font-medium leading-[15px] capitalize"
-          >
-            contact us
-          </Link>
-        </div>
+        <Link
+          href="/contact"
+          className=" text-[17px] font-medium leading-[15px] capitalize relative py-[22px] px-[30px] bg-transparent  text-secondary hover:text-secondary duration-500 border border-solid border-secondary hover:border-primary after:absolute after:content-['']  after:w-full after:top-[50%] after:right-0 after:h-0 after:transition-all after:duration-500 after:bg-primary after:-z-[1]  after:hover:bottom-[50%] after:hover:top-0 after:hover:h-full lg:inline-block hidden"
+        >
+          contact us
+        </Link>
+
         <Drawer iconColor="black" />
       </div>
     </header>

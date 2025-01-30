@@ -26,20 +26,22 @@ const FooterOne = () => {
         </div>
         <div className="flex flex-wrap gap-10 justify-between items-center mb-[61px]">
           <div>
-            <Image src={logo} alt="Footer Logo" />
+            <Link href="/">
+              <Image src={logo} alt="Footer Logo" />
+            </Link>
           </div>
           <ul className="flex flex-wrap sm:gap-[66px] gap-4">
             <li>
-              <Link href="">About</Link>
+              <Link href="/aboutUs">About</Link>
             </li>
             <li>
-              <Link href="">Features</Link>
+              <Link href="/">Features</Link>
             </li>
             <li>
-              <Link href="">Works</Link>
+              <Link href="/">Works</Link>
             </li>
             <li>
-              <Link href="">Support</Link>
+              <Link href="/">Support</Link>
             </li>
           </ul>
           <FooterSocial />

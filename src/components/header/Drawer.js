@@ -43,12 +43,14 @@ const Drawer = ({ iconColor }) => {
         <div className="h-full flex flex-col">
           <div className="px-[35px] pt-10 pb-2 flex-shrink-0">
             <div className="flex justify-between items-center border-b border-solid border-[rgba(255,255,255,0.079)] pb-5 mb-[35px]">
-              <Image
-                src={logo}
-                priority={true}
-                className="w-[160px]"
-                alt="Logo"
-              />
+              <Link href="/">
+                <Image
+                  src={logo}
+                  priority={true}
+                  className="w-[160px]"
+                  alt="Logo"
+                />
+              </Link>
               <button className="text-3xl" onClick={toggleDrawer}>
                 <FontAwesomeIcon icon={faXmark} />
               </button>
