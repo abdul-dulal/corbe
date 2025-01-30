@@ -1,5 +1,5 @@
 import React from "react";
-import rn1 from "@/public/img/blog/rn1.png";
+
 import Image from "next/image";
 import Link from "next/link";
 const RecentNews = ({ postImg, postTitle }) => {

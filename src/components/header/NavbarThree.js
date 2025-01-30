@@ -25,7 +25,7 @@ const NavbarThree = () => {
     <header
       className={`corbe z-[999] py-[30px] mb-[70px]  ${
         isSticky
-          ? "fixed top-0 left-0 w-full bg-white shadow-lg backdrop-blur-lg  is_sticky mt-0"
+          ? "fixed top-0 left-0 w-full bg-white shadow-lg   is_sticky mt-0"
           : "bg-transparent relative  "
       }`}
     >

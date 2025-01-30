@@ -2,8 +2,7 @@ import BreadCumb from "@/src/components/ui/BreadCumb";
 import React from "react";
 import smile from "@/public/img/HomeTwo/smile.png";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
 import ServiceList from "@/src/components/ui/ServiceList";
 import Link from "next/link";
 const ServiceDetails = () => {

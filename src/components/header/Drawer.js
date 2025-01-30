@@ -4,13 +4,7 @@ import Link from "next/link";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import {
-  faFacebook,
-  faGithub,
-  faPinterest,
-  faVimeoV,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import logo from "@/public/img/corbe_logo.png";
 

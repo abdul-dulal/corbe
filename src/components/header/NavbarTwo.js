@@ -25,7 +25,7 @@ const NavbarTwo = () => {
     <header
       className={`corbe z-[999]  mb-[70px]  ${
         isSticky
-          ? "fixed top-0 left-0 w-full bg-white shadow-lg backdrop-blur-lg  is_sticky mt-0 py-[30px]"
+          ? "fixed top-0 left-0 w-full bg-white shadow-lg   is_sticky mt-0 py-[30px]"
           : "bg-transparent relative   mt-[30px]"
       }`}
     >

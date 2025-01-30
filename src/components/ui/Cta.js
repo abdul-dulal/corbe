@@ -1,5 +1,4 @@
 import React from "react";
-import ButtonMore from "./ButtonMore";
 import Link from "next/link";
 
 const Cta = () => {

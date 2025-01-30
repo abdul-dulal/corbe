@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import footerbg from "@/public/img/HomeTwo/footerbg-2.png";
 
 import FooterBootom from "./FooterBootom";
