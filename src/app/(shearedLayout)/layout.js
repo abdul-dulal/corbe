@@ -7,7 +7,7 @@ import AOS from "aos";
 export default function ShearedLayout({ children }) {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 700,
       offset: 100,
       easing: "ease-in-out",
       once: true,
