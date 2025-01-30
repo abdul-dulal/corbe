@@ -51,7 +51,7 @@ const ProvideService = () => {
             width="55.7692"
             height="47.6923"
             stroke="#6F716C"
-            stroke-width="4"
+            strokeWidth="4"
           />
           <rect
             x="2"
@@ -60,7 +60,7 @@ const ProvideService = () => {
             height="12.9231"
             fill="white"
             stroke="#6F716C"
-            stroke-width="4"
+            strokeWidth="4"
           />
           <rect
             x="2"
@@ -69,7 +69,7 @@ const ProvideService = () => {
             height="12.9231"
             fill="white"
             stroke="#6F716C"
-            stroke-width="4"
+            strokeWidth="4"
           />
           <rect
             x="58.5391"
@@ -78,7 +78,7 @@ const ProvideService = () => {
             height="12.9231"
             fill="white"
             stroke="#6F716C"
-            stroke-width="4"
+            strokeWidth="4"
           />
           <rect
             x="58.5391"
@@ -87,7 +87,7 @@ const ProvideService = () => {
             height="12.9231"
             fill="white"
             stroke="#6F716C"
-            stroke-width="4"
+            strokeWidth="4"
           />
         </svg>
       ),
