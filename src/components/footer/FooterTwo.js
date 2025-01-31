@@ -1,9 +1,20 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import footerbg from "@/public/img/HomeTwo/footerbg-2.png";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 import FooterBootom from "./FooterBootom";
 const FooterTwo = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
+  }, []);
   return (
     <footer className="-mt-[230px]">
       <div className="container">

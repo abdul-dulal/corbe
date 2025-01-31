@@ -1,8 +1,20 @@
+"use client";
+import React, { useEffect } from "react";
 import BreadCumb from "@/src/components/ui/BreadCumb";
 import Service from "@/src/components/ui/Service";
-import React from "react";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 const Services = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
+  }, []);
   return (
     <div>
       <BreadCumb currentPage="services" />

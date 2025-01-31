@@ -1,4 +1,5 @@
 "use client";
+import React, { useEffect } from "react";
 import About from "@/src/components/ui/About";
 import BreadCumb from "@/src/components/ui/BreadCumb";
 import ButtonMore from "@/src/components/ui/ButtonMore";
@@ -10,17 +11,19 @@ import Testimonial from "@/src/components/ui/Testimonial";
 import vision from "@/public/img/HomeThree/vision.png";
 import Trusted from "@/src/components/ui/Trusted";
 import Image from "next/image";
-import React, { useEffect } from "react";
+
 import "aos/dist/aos.css";
 import AOS from "aos";
 const AboutUs = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 100,
-      easing: "ease-in-out",
-      once: true,
-    });
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
   }, []);
   return (
     <div>

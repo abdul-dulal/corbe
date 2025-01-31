@@ -1,9 +1,22 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "@/public/img/logo-black.png";
 import Link from "next/link";
 import FooterSocial from "./FooterSocial";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const FooterOne = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
+  }, []);
   return (
     <footer className="pt-[120px]">
       <div className="container">

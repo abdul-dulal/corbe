@@ -1,10 +1,23 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import List from "../ui/List";
 import FooterSocial from "./FooterSocial";
 import Image from "next/image";
 import footerLogo from "@/public/img/logo-black.png";
 import Link from "next/link";
+import "aos/dist/aos.css";
+import AOS from "aos";
 const FooterBootom = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
+  }, []);
   return (
     <div className="container">
       <div className="grid lg:grid-cols-2 pb-14 border-b" data-aos="fade-up">

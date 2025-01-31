@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import queen from "@/public/img/HomeThree/queen.png";
 import group from "@/public/img/HomeThree/group.png";
@@ -21,7 +21,8 @@ import Cta from "@/src/components/ui/Cta";
 import Trusted from "@/src/components/ui/Trusted";
 import Team from "@/src/components/ui/Team";
 import ProvideService from "@/src/components/ui/ProvideService";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 const HomeThree = () => {
   const services = [
     {
@@ -42,6 +43,13 @@ const HomeThree = () => {
       title: "Web Design",
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
 
   return (
     <div>

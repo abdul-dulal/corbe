@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import hero from "@/public/img/HomeTwo/hero.png";
@@ -28,7 +28,8 @@ import Gellary from "@/src/components/ui/Gellary";
 import Testimonial from "@/src/components/ui/Testimonial";
 import GellaryButton from "@/src/components/ui/GellaryButton";
 import PlayVideo from "@/src/components/ui/PlayVideo";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 const HomeTwo = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const alwaysOpenIndex = 1;
@@ -204,7 +205,16 @@ const HomeTwo = () => {
       ),
     },
   ];
-
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
+  }, []);
   return (
     <div>
       {/* Corbe_Hero_Start */}

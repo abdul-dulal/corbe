@@ -1,10 +1,21 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import footerbg from "@/public/img/HomeTwo/footerbg-2.png";
 import FooterBootom from "./FooterBootom";
 import Link from "next/link";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
 const FooterThree = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      AOS.init({
+        duration: 600,
+        offset: 100,
+        easing: "ease-in-out",
+        once: true,
+      });
+    }
+  }, []);
   return (
     <footer className="">
       <div className="bg-primary">
