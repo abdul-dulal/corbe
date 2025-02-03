@@ -208,7 +208,7 @@ const HomeTwo = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       AOS.init({
-        duration: 600,
+        duration: 700,
         offset: 100,
         easing: "ease-in-out",
         once: true,
